@@ -53,7 +53,7 @@ const UserCard = (props) => {
      
        </div>
         <button className='md:px-10 px-7 py-5 bg-black text-white rounded-[4px]' onClick={()=>setSendApplyModal(true)}>Подтвердить и перейти в чат</button>
-        <SendModal isOpen={openSendModal} onClose={handleClose} data={state} />
+        <SendModal isOpen={openSendModal} onClose={handleClose} data={team[0]} />
      </div>
     ))
   )

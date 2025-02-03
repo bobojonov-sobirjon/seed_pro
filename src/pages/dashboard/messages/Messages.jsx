@@ -29,14 +29,14 @@ const Messages = (props) => {
   const [socket, setSocket] = useState(null);
   const [isUserLoading, setIsUserLoading] = useState(false);
   const email_ref = useRef();
-  const message_ref = useRef();
+  const message_ref = useRef(); 
   const { allNotifications, loading } = useSelector(state => state.notificationsReducer);
   const dispatch = useDispatch();
   
   const removeNotificationWithSelectedUser = async () => {
     const controller = new AbortController();
     const signal = controller.signal;
-    const selectUserNotification = allNotifications.filter(el => el.favorite?.sender?.id === selectedUser.receiver?.id);
+    const selectUserNotification = allNotifications?.filter(el => el.favorite?.sender?.id === selectedUser.receiver?.id) || [];
 
     if (selectUserNotification.length > 0) {
       selectUserNotification.forEach(el => {
@@ -187,7 +187,7 @@ const Messages = (props) => {
       errorHandler(error);
     }
   }, []);
-
+  
   // send message
   const sendMessage = () => {
     if (socket) {

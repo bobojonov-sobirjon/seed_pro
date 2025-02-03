@@ -14,12 +14,9 @@ function SendModal({ data, isOpen, onClose = true }) {
   const [socket, setSocket] = useState(null);
 
   const [projects, setData] = useState([]);
-
   // reply handler
   const replyHandler = async () => {
-
     if (text_ref.current.value.trim()?.length > 0) {
-
       let obj = {
         receiver: data,
         senderId: user_id,
