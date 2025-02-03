@@ -1,0 +1,642 @@
+{
+  "home": {
+    "header": {
+      "logo": "STARTUP SEED",
+      "home": "Главная",
+      "about": "О нас",
+      "reviews": "Отзывы",
+      "questions": "Вопросы",
+      "contacts": "Контакты",
+      "login": "Войти",
+      "registration": "Регистрация",
+      "entrance": "Вход"
+    },
+    "main": {
+      "top_title": "Придумайте собственную идею!",
+      "title_one": "Запустите свой",
+      "title_two": "проект",
+      "title_three": "и найдите",
+      "title_four": "команду",
+      "description": "Сделайте из мечты реальность. Размещайте проекты, собирайте команду обменивайтесь опытом, прокачивайте свои профессиональные навыки",
+      "button_text": "Подробнее"
+    },
+    "project": {
+      "title": "О ПРОЕКТЕ",
+      "left_title": "STARTUP SEED",
+      "left_description_top": "Площадка для размещения или поиска проектов, специалистов, а также для обмена опытом внутри профессионального бизнес и диджитал сообщества.",
+      "left_description_bottom": "Startup Seed - это реализация своих идей в команде с экспертами-единомышленниками.",
+      "right_count_one": "55+",
+      "right_count_one_title": "Зарегистрированных специалистов",
+      "right_count_two": "60+",
+      "right_count_two_title": "Стартапов и инсайтов",
+      "right_count_three": "500+",
+      "right_count_three_title": "Полезных контактов",
+      "right_count_four_title": "Профессиональный рост в крутой команде",
+      "error_image": "Размер изображения должен быть 70х70."
+    },
+    "howWork": {
+      "top_title": "КАК ЭТО РАБОТАЕТ?",
+      "bottom_title": "КАК ЭТО РАБОТАЕТ?",
+      "description": "Если вы владелец стартапа",
+      "items": {
+        "0": {
+          "content": "Зарегистрируйтесь и заполните профиль в личном кабинете"
+        },
+        "1": {
+          "content": "После проверки профиля размещайте свои проекты"
+        },
+        "2": {
+          "content": "Находите крутых специалистов"
+        },
+        "3": {
+          "content": "Реализовывайте свои идеи в команде с профессионалами"
+        }
+      },
+      "button_text": "Присоединиться"
+    },
+    "career": {
+      "title_one": "Startup seed",
+      "title_two": "- твой быстрый",
+      "title_four": "карьерный эскАлатор",
+      "items": {
+        "0": {
+          "content": "Зарегистрируйся",
+          "description": "Зарегистрируйся на платформе и укажи свои навыки"
+        },
+        "1": {
+          "content": "Найди проект",
+          "description": "Выбери свой проект и направление, по которому хочешь развиваться"
+        },
+        "2": {
+          "content": "Прояви себя! ",
+          "description": "Раскрой свой потенциал и докажи всем на что ты способен"
+        },
+        "3": {
+          "content": "Получи должность",
+          "description": "Займи достойное место в быстроразвивающихся проектах"
+        }
+      }
+    },
+    "forWho": {
+      "title_top": "Для кого этот проект?",
+      "title_bottom": "Для кого этот проект?",
+      "items": {
+        "0": {
+          "content": "Для предпринимателей",
+          "description": "которые хотят найти крутых специалистов"
+        },
+        "1": {
+          "content": "Для владельцев бизнеса",
+          "description": "которые хотят развить свой проект"
+        },
+        "2": {
+          "content": "Для блогеров и фрилансеров",
+          "description": "которые хотят увеличить прибыль новыми инструментами"
+        },
+        "3": {
+          "content": "Для специалистов",
+          "description": "которые хотят узнать свежие функции и кейсы для продвижения"
+        },
+        "4": {
+          "content": "Для студентов",
+          "description": "ищущих себя и всем, кто считает, что за IT будущее"
+        },
+        "5": {
+          "content": "Для тех",
+          "description": "кто хочет провести целый день в DIGITAL - тусовке, общаясь на одном языке"
+        }
+      }
+    },
+    "registerCard": {
+      "title": "Регистрация",
+      "name_input_placeholder": "Введите имя",
+      "email_input_placeholder": "Ваш E-mail",
+      "button_text": "Зарегистрироваться",
+      "form_description": "Нажимая на кнопку, вы даете согласие на обработку персональных данных"
+    },
+    "graduate": {
+      "title_one": "Компании",
+      "title_two": "которые уже разместили проекты на нашей платформе",
+      "items": {
+        "0": {
+          "content": "Skolkovo",
+          "description": "Школа стартапов - Акселератор для стартапов стадии Pre - Seed, Seed"
+        },
+        "1": {
+          "content": "ИДЕЯ",
+          "description": "Инфраструктурный, социально-ориентированный проект республиканского масштаба"
+        },
+        "2": {
+          "content": "DAN",
+          "description": "Агентство результативного маркетинга, которое уделяет приоритетное внимание устойчивому, долгосрочному росту"
+        },
+        "3": {
+          "content": "ARDA",
+          "description": "Ассоциация, миссией которой является повышение качества работы  digital-агентств, развитие рынка и технологий работы."
+        }
+      }
+    },
+    "speaker": {
+      "title_one": "Остались",
+      "title_two": "вопросы?",
+      "name_input_placeholder": "Введите имя",
+      "email_input_placeholder": "Ваш E-mail",
+      "button_text": "Оставить заявку",
+      "form_description": "Присоединяйтесь к платформе, чтобы стать частью команды",
+      "image_title": "Стань частью команды!"
+    },
+    "footer": {
+      "brand_title": "STARTUP SEED",
+      "brand_description": "Следи за нами в соц. сетях:",
+      "menu_site": "МЕНЮ САЙТА",
+      "home": "Главная",
+      "about": "О нас",
+      "contacts": "Контакты",
+      "questions": "Вопросы",
+      "about_project": "О ПРОЕКТЕ",
+      "agreement": "Пользовательское соглашение",
+      "rules": "Правила",
+      "help": "Помощь",
+      "project_services": "Услуги проекта",
+      "data_year": "©Startup Seed 2024."
+    }
+  },
+  "login": {
+    "title": "Вход",
+    "email_input_placeholder": "Email",
+    "password_input_placeholder": "Пароль",
+    "button_text": "Вход",
+    "forgot_password": "Забыли пароль?",
+    "register": "Регистрация"
+  },
+  "register": {
+    "title": "Регистрация",
+    "firstname_input_placeholder": "Имя",
+    "lastname_input_placeholder": "Фамилия",
+    "email_input_placeholder": "Email",
+    "password_input_placeholder": "Пароль",
+    "password_repeat_input_placeholder": "Повтор пароля",
+    "button_text": "Зарегистрироваться",
+    "have_account": "Есть аккаунт?",
+    "sign_in": "Войдите"
+  },
+  "roles": {
+    "title": "Пожалуйста, выберите свою роль",
+    "role_one": "Работодатель",
+    "role_two": "Соискатель",
+    "button_text": "Продолжать"
+  },
+  "dashboard": {
+    "home": {
+      "title": "Для кого этот проект?",
+      "items": {
+        "0": {
+          "content": "Для предпринимателей",
+          "description": "которые хотят найти крутых специалистов"
+        },
+        "1": {
+          "content": "Для владельцев бизнеса",
+          "description": "которые хотят развить свой проект"
+        },
+        "2": {
+          "content": "Для блогеров и фрилансеров",
+          "description": "которые хотят увеличить поток звонков новыми интсрументами"
+        },
+        "3": {
+          "content": "Для специалистов",
+          "description": "которые хотят узнать свежие функции и кейсы для продвижения"
+        },
+        "4": {
+          "content": "Для студентов",
+          "description": "ищуших себя и всем, кто считает, что за IT будущее"
+        },
+        "5": {
+          "content": "Для тех",
+          "description": "кто хочет провести целый день в DIGITAL - тусовке, общаясь на одном языке"
+        }
+      }
+    },
+    "pages": {
+      "search_project": {
+        "title": "Проекты",
+        "job_title_input_placeholder": "Должность",
+        "search_button_text": "Найти",
+        "create_button_text": "Создать проект",
+        "alert_not_found": "Проекты не найдены.",
+        "alert_description": "Заполните профиль полностью, чтобы видеть проекты",
+        "all_option": "Все"
+      },
+      "one_project_view": {
+        "title": "ПРОЕКТЫ",
+        "open_position": "Открытые позиции",
+        "tasks_and_acheiv": "Задачи и достижения:",
+        "skills": "Навыки:",
+        "reply": "Откликнуться"
+      }
+    },
+    "profile": {
+      "main_information": {
+        "firstname_input_placeholder": "Имя",
+        "lastname_input_placeholder": "Фамилия",
+        "gender_select_placeholder": "Пол",
+        "man_select": "Мужской",
+        "woman_select": "Женский",
+        "not_given_select": "Не указан",
+        "birthday_input_placeholder": "Дата рождения",
+        "country_input_placeholder": "Страна",
+        "city_input_placeholder": "Город",
+        "button_text": "Сохранить"
+      },
+      "professional_information": {
+        "title": "Профессиональная информация",
+        "position_input_label": "Желаемая должность",
+        "position_input_placeholder": "Тестировщик",
+        "level_select_label": "Уровень",
+        "items": {
+          "0": {
+            "title": "Junior"
+          },
+          "1": {
+            "title": "Middle"
+          },
+          "2": {
+            "title": "Senior"
+          }
+        },
+        "language_input_label": "Иностранный язык",
+        "language_input_plaholder": "English, Rus",
+        "language_select_label": "Уровень",
+        "skills_input_label": "Навыки",
+        "skills_input_placeholder": "Javascript, ReactJS, ...",
+        "cancel_button_text": "Отменить",
+        "save_button_text": "Сохранить"
+      },
+      "experience": {
+        "title": "Опыт работы",
+        "job_title_input_label": "Должность работы",
+        "job_title_input_placeholder": "Программист",
+        "company_input_label": "Компания",
+        "company_input_placeholder": "Usertech",
+        "start_work_time_label": "Начало работы",
+        "finish_work_time_label": "Окончание работы",
+        "checkbox_title": "По настоящее время",
+        "achievement_title": "Ваши достижения",
+        "achievement_placeholder": "Осуществлял руководство проектом по внедрению электронного документооборота на базе DocsVision ver. 5.0.",
+        "cancel_button_text": "Отменить",
+        "save_button_text": "Сохранить"
+      },
+      "education": {
+        "title": "Образование",
+        "speciality_input_label": "Специальность",
+        "speciality_input_placeholder": "Программист",
+        "edu_institution_label": "Учебное заведение",
+        "edu_institution_placeholder": "МГУ",
+        "start_work_time_label": "Начало обучения",
+        "finish_work_time_label": "Окончание обучения",
+        "cancel_button_text": "Отменить",
+        "save_button_text": "Сохранить"
+      },
+      "courses_training": {
+        "title": "Курсы и повышение квалификации",
+        "name_input_label": "Название",
+        "name_input_placeholder": "Введите название",
+        "educational_institution_input_label": "Учебное заведение",
+        "edu_institution_input_placeholder": "МГУ",
+        "start_training_time_label": "Начало обучения",
+        "finish_training_time_label": "Окончание обучения",
+        "cancel_button_text": "Отменить",
+        "save_button_text": "Сохранить"
+      },
+      "about_me": {
+        "title": "О себе",
+        "textarea_placeholder": "Опишите ваши задачи и достижения",
+        "cancel_button_text": "Отменить",
+        "save_button_text": "Сохранить"
+      }
+    },
+    "myProjects": {
+      "current": {
+        "title": "У вас нет активных проектОВ",
+        "description": "Для их поиска перейдите в раздел",
+        "sub_text_one": "“Проекты”",
+        "sub_text_two": "или",
+        "sub_text_three": "создайте свой",
+        "my_project": "МОИ ПРОЕКТЫ",
+        "button_text": "Создать проект"
+      },
+      "create": {
+        "create_project": "Создать проект",
+        "edit_project": "Изменить проект",
+        "name_input_label": "Название",
+        "name_input_placeholder": "Название проекта",
+        "description_input_label": "Описание",
+        "description_input_placeholder": "Описание проекта",
+        "project_team": "Команда проекта",
+        "add_position_button_text": "Добавить должность",
+        "edit_button_text": "Изменить",
+        "send_to_check_button_text": "Отправить на проверку",
+        "extra_form": {
+          "specialist_input_label": "Специалист",
+          "count_people_input_label": "Сколько человек необходимо?",
+          "how_many_now_input_label": "Сколько их сейчас?",
+          "delete_button_text": "Удалить",
+          "add_button_text": "Добавить",
+          "desired_position_input_label": "Желаемая должность",
+          "desired_position_input_placeholder": "Тестировщик",
+          "level_select_label": "Уровень",
+          "tasks_and_acheiv": "Задачи и достижения",
+          "skills": "Навыки",
+          "remove_button_text": "Удалить"
+        }
+      }
+    },
+    "messages": {
+      "search_chat_input_placeholder": "Поиск чата",
+      "all_messages": "Все сообщения",
+      "project_text": "Проект:",
+      "enter_message_input_placeholder": "Введите сообщение",
+      "alert_text": "Чат будет доступен, когда вам ответит собеседник"
+    },
+    "featured": {
+      "title": "Избранное",
+      "not_data": "У вас нету активных избранное",
+      "not_found": "Избранное не найдено."
+    },
+    "settings": {
+      "title": "Настройки",
+      "email_input_label": "E-mail",
+      "email_input_placeholder": "Yourmail@mail.ru",
+      "email_input_button": "Изменить",
+      "phone_input_label": "Номер телефона",
+      "phone_input_placeholder": "Номер телефона",
+      "phone_input_button": "Изменить",
+      "password_input_label": "Пароль",
+      "password_input_placeholder": "••••••••••••••",
+      "password_input_button": "Изменить",
+      "time_input_label": "Часовой пояс",
+      "button_text": "Удалить аккаунт",
+      "email_modal": {
+        "title": "СМЕНА ПОЧТЫ",
+        "description": "Нам указанный вами новый адрес электронной почты будет выслано письмо",
+        "subtitle_one": "с кодом подтверждения",
+        "subtitle_two": "каторый нужно будет ввести на следующем шаге.",
+        "email_input_label": "E-mail",
+        "email_input_placeholder": "Новый yourmail@mail.ru",
+        "confirm_code": "Код подвержедения",
+        "cancel_button_text": "Отменить",
+        "save_button_text": "Получить код подвержедения",
+        "send_try": "Отправмть код повторно"
+      },
+      "password_modal": {
+        "title": "СМЕНА ПАРОЛЯ",
+        "description": "После изменения пароля прайзайдёт выход из аккаунта",
+        "current_password_input": "Текущий пароль",
+        "new_password_input": "Новый пароль",
+        "repeat_new_password_input": "Повторите новый пароль",
+        "cancel_button_text": "Отменить",
+        "save_button_text": "Сохранить"
+      }
+    },
+    "sidebarItems": {
+      "user_type_one": "Работодатель",
+      "user_type_two": "Соискатель",
+      "home_link": "Главная",
+      "pages_link": "Страницы",
+      "add_project_link": "Добавить проект",
+      "search_project_link": "Найти проект",
+      "profile_link": "Профиль",
+      "my_project_link": "Мои проекты",
+      "messages_link": "Сообщения",
+      "favorites_link": "Избранное",
+      "settings_link": "Настройки",
+      "logout_link": "Выйти"
+    },
+    "header": {
+      "link_one": "Проекты",
+      "link_two": "Специалисты",
+      "specialists": {
+        "title": "Специалисты",
+        "search_input_placeholder": "Должность",
+        "all_option": "Все",
+        "search_button_text": "Найти",
+        "not_found": "Экспертов не найдено.",
+        "details": {
+          "title": "Профессиональная информация",
+          "send_invite_button_text": "Отправить приглашение",
+          "profileCard": {
+            "not_look_for_project": "Не ищу проект",
+            "look_for_project": "Ищу проект",
+            "sex_label": "Пол:",
+            "man": "Мужской",
+            "birthday": "Дата рождения:",
+            "country": "Страна:",
+            "city": "Город:"
+          },
+          "specialCard": {
+            "job_title": "Должность:",
+            "foreign:": "Иностранный:",
+            "level": "Уровень:",
+            "level2": "Иностранный:"
+          },
+          "modalCard": {
+            "invitation": "ПРИГЛАШЕНИЕ для:",
+            "write_letter": "Напишите письмо",
+            "input_placeholder": "Комментарий",
+            "cancel_button_text": "Отменить",
+            "send_button_text": "Отправить"
+          }
+        }
+      }
+    }
+  },
+  "extraComponents": {
+    "allProjectDetails": {
+      "title": "Открытые позиции",
+      "tasks_and_acheiv": "Задачи и достижения:",
+      "skills": "Навыки:",
+      "reply": "Откликнуться",
+      "write_letter": "Напишите письмо",
+      "write_letter_input_placeholder": "Комментарий",
+      "cancel_button_text": "Отмена",
+      "send_button_text": "Отправить"
+    },
+    "deleteModal": {
+      "delete_text": "Удалить",
+      "delete_type_one": "аккаунт",
+      "delete_type_two": "элемент",
+      "confirm_text": "Вы уверены, что хотите удалить?",
+      "delete_button_text": "Удалить",
+      "cancel_button_text": "Отменить"
+    },
+    "workPositionCard": {
+      "tasks_and_acheiv": "Задачи и достижения:",
+      "skills": "Навыки:"
+    },
+    "aboutData": {
+      "delete_button_text": "Удалить",
+      "save_button_text": "Сохранить"
+    },
+    "educationData": {
+      "speciality_input_label": "Специальность",
+      "speciality_input_placeholder": "Программист",
+      "edu_institution_label": "Учебное заведение",
+      "edu_institution_input_placeholder": "МГУ",
+      "start_training_time_label": "Начало обучения",
+      "finish_training_time_label": "Окончание обучения",
+      "delete_button_text": "Удалить",
+      "save_button_text": "Сохранить"
+    },
+    "experienceData": {
+      "job_title_input_label": "Должность работы",
+      "job_title_input_placeholder": "Программист",
+      "company_input_label": "Компания",
+      "company_input_placeholder": "Usertech",
+      "start_work_time_label": "Начало работы",
+      "finish_work_time_label": "Окончание работы",
+      "present_time_input_label": "По настоящее время",
+      "your_achievements_input_label": "Ваши достижения",
+      "your_achievements_input_placeholder": "Осуществлял руководство проектом по внедрению электронного документооборота на базе DocsVision ver. 5.0.",
+      "delete_button_text": "Удалить",
+      "save_button_text": "Сохранить"
+    },
+    "professionalInfoData": {
+      "desired_position_input_label": "Желаемая должность",
+      "desired_position_input_placeholder": "Тестировщик",
+      "level": "Уровень",
+      "foreign_language_input_label": "Иностранный язык",
+      "foreign_language_input_placeholder": "English",
+      "lang_level": "Уровень",
+      "skills_input_label": "Навыки",
+      "skills_input_placeholder": "Js",
+      "delete_button_text": "Удалить",
+      "save_button_text": "Сохранить"
+    },
+    "projectsDetails": {
+      "open_position": "Открытые позиции"
+    },
+    "allProjectsData": {
+      "not_found": "Проекты не найдены."
+    },
+    "projectCard": {
+      "look_text": "Посмотреть"
+    },
+    "replyForm": {
+      "tasks_and_acheiv": "Задачи и достижения:",
+      "skills": "Навыки:",
+      "write_letter": "Напишите письмо",
+      "write_letter_input_placeholder": "Комментарий",
+      "cancel_button_text": "Отменить",
+      "send_button_text": "Отправить"
+    },
+    "specializationCard": {
+      "not_found": "Экспертов не найдено."
+    },
+    "courseDataPage": {
+      "name_input_label": "Название",
+      "name_input_placeholder": "Введите название",
+      "education_input_label": "Учебное заведение",
+      "education_input_placeholder": "МГУ",
+      "start_date": "Начало обучения",
+      "end_date": "Окончание обучения",
+      "delete_button_text": "Удалить",
+      "save_button_text": "Сохранить"
+    }
+  },
+  "toastMessage": {
+    "loginPage": {
+      "login_password_incorrect": "Логин или пароль введены неправильно",
+      "login_password_incorrect_more": "Логин или пароль введен неверно."
+    },
+    "registerPage": {
+      "your_information_saved": "Ваша информация успешно сохранена.",
+      "error_occured": "Произошла ошибка.",
+      "server_problem": "На сервере произошла ошибка.",
+      "password_incorrect": "Пароль был введен неверно.",
+      "password_validation": "Пароль должен быть длиной не менее 8 символов"
+    },
+    "detailsPage": {
+      "cant_delete": "Вы не можете удалить это."
+    },
+    "messagesPage": {
+      "not_found": "Не найдено."
+    },
+    "aboutPage": {
+      "saved_success": "Успешно сохранено."
+    },
+    "aboutDataPage": {
+      "edit_success": "Изменено успешно."
+    },
+    "coursePage": {
+      "saved_success": "Успешно сохранено."
+    },
+    "courseDataPage": {
+      "edit_success": "Изменено успешно."
+    },
+    "educationPage": {
+      "saved_success": "Успешно сохранено."
+    },
+    "educationDataPage": {
+      "edit_success": "Изменено успешно."
+    },
+    "experiencePage": {
+      "saved_success": "Успешно сохранено."
+    },
+    "experienceDataPage": {
+      "edit_success": "Изменено успешно."
+    },
+    "professionalInfoPage": {
+      "saved_success": "Успешно сохранено."
+    },
+    "professionalInfoDataPage": {
+      "edit_success": "Изменено успешно."
+    },
+    "selfPage": {
+      "edit_success": "Изменено успешно."
+    },
+    "allProjectsPage": {
+      "fill_full": "Заполните поля и повторите попытку."
+    },
+    "createProjectPage": {
+      "skills_missing": "Некоторые навыки отсутствуют, пожалуйста, заполните их все.",
+      "required_number": "Требуемое количество помощников может не быть заполнено",
+      "not_images": "Для проекта не выбрано ни одного изображения.",
+      "project_send_review": "Проект отправляется на проверку к админу.",
+      "edit_success": "Ваш проект успешно изменён.",
+      "not_position": "Нет доступной должность.",
+      "project_name": "Название проекта, описание проекта не указано."
+    },
+    "allProjectsDataPage": {
+      "added_success": "Успешно добавлено в избранное.",
+      "try_again": "Попробуйте еще раз.",
+      "delete_success": "Успешно удалено из избранного.",
+      "reply_project": "Вы успешно откликнулись на проект."
+    },
+    "projectDetailCardPage": {
+      "added_success": "Успешно добавлено в избранное.",
+      "try_again": "Попробуйте еще раз.",
+      "delete_success": "Успешно удалено из избранного."
+    },
+    "projectFormPage": {
+      "retry": "Невозможно повторить."
+    },
+    "codeModalPage": {
+      "special_code_send": "На этот адрес электронной почты был отправлен специальный код",
+      "edit_success": "Электронная почта успешно изменена."
+    },
+    "passwordModalPage": {
+      "edit_password": "Пароль успешно изменен.",
+      "new_password": "Проверьте новый пароль и повторите пароль",
+      "validation": "Пароль должен быть длиной не менее 8 символов."
+    },
+    "phoneNumberPage": {
+      "edit_success": "Телефон номер успешно изменен."
+    },
+    "specializationsPage": {
+      "fill_inputs": "Заполните поля и повторите попытку."
+    },
+    "profileReducer": {
+      "delete_success": "Данные успешно удалены.",
+      "server_problem": "Есть проблема с сервером."
+    }
+  }
+}

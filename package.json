@@ -1,0 +1,44 @@
+{
+  "name": "seed_project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.19",
+    "@material-tailwind/react": "^2.1.9",
+    "@reduxjs/toolkit": "^2.2.3",
+    "axios": "^1.6.8",
+    "i18next": "^23.14.0",
+    "jwt-decode": "^4.0.0",
+    "lucide-react": "^0.469.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.5",
+    "react-hook-form": "^7.51.3",
+    "react-i18next": "^15.0.1",
+    "react-icons": "^5.1.0",
+    "react-international-phone": "^4.2.9",
+    "react-paginate": "^8.2.0",
+    "react-redux": "^9.1.1",
+    "react-router-dom": "^6.23.0",
+    "react-toastify": "^10.0.5",
+    "redux": "^5.0.1",
+    "swiper": "^11.1.1",
+    "universal-cookie": "^7.1.4",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^4.1.0"
+  }
+}

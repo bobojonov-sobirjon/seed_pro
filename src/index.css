@@ -1,0 +1,312 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Gunterz';
+  src: url('../public/fonts/Gunterz-Medium.otf'),
+    url('../public/fonts/Gunterz-MediumItalic.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyRegular';
+  src: url('../public/fonts/Gilroy-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+  /* url('../public/fonts/Gilroy-Thin.ttf'),
+    url('../public/fonts/Gilroy-SemiBold.ttf'),
+    url('../public/fonts/Gilroy-Regular.ttf'),
+    url('../public/fonts/Gilroy-Light.ttf'),
+    url('../public/fonts/Gilroy-Heavy.ttf'),
+    url('../public/fonts/Gilroy-ExtraBold.ttf'),
+    url('../public/fonts/Gilroy-Bold.ttf'); */
+}
+
+@font-face {
+  font-family: 'GilroyMedium';
+  src: url('../public/fonts/Gilroy-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroySemiBold';
+  src: url('../public/fonts/Gilroy-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyBold';
+  src: url('../public/fonts/Gilroy-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  font-family: "GilroyRegular";
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: silver;
+}
+
+.clone-text {
+  color: #070a0f;
+  -webkit-text-stroke: 1px #2c2f33;
+  text-stroke: 1px #2c2f33;
+}
+
+.swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal {
+  display: none !important;
+}
+
+.active-link::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 120%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #baec42;
+  position: absolute;
+  left: 0;
+}
+
+.active-link {
+  position: relative;
+}
+
+.chat-box-going::before {
+  position: absolute;
+  right: -8px;
+  top: -0.5px;
+  content: url('./assets/images/Polygon 1.svg');
+}
+
+.chat-box-incoming::before {
+  position: absolute;
+  left: -9px;
+  top: 0px;
+  content: url('./assets/images/polygon-left.svg');
+}
+
+/* calendar */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* loading */
+.loadingg {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #3498db;
+  width: 16px;
+  height: 16px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* internation phone number */
+.settings_phone .react-international-phone-input-container {
+  height: 47.97px;
+}
+
+.settings_phone .react-international-phone-input-container button {
+  height: 100%;
+  background-color: #fafafa;
+  border: none !important;
+}
+
+.settings_phone .react-international-phone-input,
+.settings_phone .react-international-phone-country-selector {
+  height: 47.97px !important;
+}
+
+.settings_phone .react-international-phone-input {
+  width: 100%;
+  background-color: #fafafa !important;
+  border: none !important;
+  font-size: 14px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bg_gradient_how_work {
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 16px 21px 0px rgba(0, 0, 0, 0.06);
+  background: linear-gradient(134.69deg, rgba(255, 255, 255, 0.1) 5.204%, rgba(255, 255, 255, 0) 98.575%), rgb(7, 10, 15);
+  /* border: linear-gradient(2px, rgba(255, 255, 255, 0.39), rgba(61, 61, 61, 0)); */
+}
+
+.bg_gradient_how_work_register {
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 16px 21px 0px rgba(0, 0, 0, 0.06);
+  background: linear-gradient(134.69deg, rgba(255, 255, 255, 0.1) 5.323%, rgba(255, 255, 255, 0) 98.753%), rgba(7, 10, 15, 0.8);
+}
+
+
+/* for pagination */
+.paginationUL {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.paginationUL .previous {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.paginationUL .next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.paginationUL li a {
+  background-color: #eee;
+  margin: 2px;
+  color: #000;
+  width: 32px;
+  height: 27px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.paginationUL li a:hover {
+  color: #000 !important;
+}
+
+.paginationUL li.active a {
+  background-color: #B7ED1D;
+  border-color: transparent;
+  color: white;
+}
+
+.paginationUL li.active a:hover {
+  color: #fff !important;
+}
+
+/* checkbox input */
+.current_experience {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.current_experience input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  border: 1px #b7de1d solid;
+}
+
+/* When the checkbox is checked, add a blue background */
+.current_experience input:checked~.checkmark {
+  background-color: #b7de1d;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.current_experience input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.current_experience .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+/* scroll */
+scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+
+@media (max-width: 378px) {
+
+  /* pagination */
+  .paginationUL .previous {
+    position: inherit;
+  }
+
+  .paginationUL .next {
+    position: inherit;
+  }
+
+}

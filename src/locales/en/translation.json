@@ -1,0 +1,642 @@
+{
+  "home": {
+    "header": {
+      "logo": "STARTUP SEED",
+      "home": "Home",
+      "about": "About",
+      "reviews": "Reviews",
+      "questions": "Questions",
+      "contacts": "Contacts",
+      "login": "Login",
+      "registration": "Registration",
+      "entrance": "Sign-in"
+    },
+    "main": {
+      "top_title": "Come up with your own idea!",
+      "title_one": "Launch yours ",
+      "title_two": "project",
+      "title_three": "and find",
+      "title_four": "command",
+      "description": "Make your dream come true. Post projects, assemble a team, exchange experiences, and improve your professional skills.",
+      "button_text": "Read more"
+    },
+    "project": {
+      "title": "ABOUT THE PROJECT",
+      "left_title": "STARTUP SEED",
+      "left_description_top": "A platform for posting or searching for projects, specialists, as well as for exchanging experiences within the professional business and digital community.",
+      "left_description_bottom": "Startup Seed is about bringing your ideas to life in a team with like-minded experts.",
+      "right_count_one": "55+",
+      "right_count_one_title": "Registered specialists",
+      "right_count_two": "60+",
+      "right_count_two_title": "Startups and insights",
+      "right_count_three": "500+",
+      "right_count_three_title": "Useful contacts",
+      "right_count_four_title": "Professional growth in a cool team",
+      "error_image": "The image size must be 70x70."
+    },
+    "howWork": {
+      "top_title": "HOW DOES THIS WORK?",
+      "bottom_title": "HOW DOES THIS WORK?",
+      "description": "If you are a startup owner",
+      "items": {
+        "0": {
+          "content": "Register and fill out your profile in your personal account"
+        },
+        "1": {
+          "content": "After checking your profile, post your projects"
+        },
+        "2": {
+          "content": "Find cool specialists"
+        },
+        "3": {
+          "content": "Bring your ideas to life in a team with professionals"
+        }
+      },
+      "button_text": "Join"
+    },
+    "career": {
+      "title_one": "Startup seed",
+      "title_two": "- your fast",
+      "title_four": "career escalator",
+      "items": {
+        "0": {
+          "content": "Register",
+          "description": "Register on the platform and indicate your skills"
+        },
+        "1": {
+          "content": "Find a project",
+          "description": "Choose your project and the direction you want to develop in"
+        },
+        "2": {
+          "content": "Show yourself!",
+          "description": "Unleash your potential and prove to everyone what you are capable of"
+        },
+        "3": {
+          "content": "Get a position",
+          "description": "Take your rightful place in fast-growing projects"
+        }
+      }
+    },
+    "forWho": {
+      "title_top": "Who is this project for?",
+      "title_bottom": "Who is this project for?",
+      "items": {
+        "0": {
+          "content": "For entrepreneurs",
+          "description": "who want to find cool specialists"
+        },
+        "1": {
+          "content": "For business owners",
+          "description": "who want to develop their project"
+        },
+        "2": {
+          "content": "For bloggers and freelancers",
+          "description": "who want to increase profits with new tools"
+        },
+        "3": {
+          "content": "For specialists",
+          "description": "who want to learn new features and cases for promotion"
+        },
+        "4": {
+          "content": "For students",
+          "description": "those who are looking for themselves and everyone who believes that IT is the future"
+        },
+        "5": {
+          "content": "For those",
+          "description": "who wants to spend the whole day in a DIGITAL party, communicating in one language"
+        }
+      }
+    },
+    "registerCard": {
+      "title": "Registration",
+      "name_input_placeholder": "Enter your name",
+      "email_input_placeholder": "Your E-mail",
+      "button_text": "Register",
+      "form_description": "By clicking the button, you agree to the processing of personal data"
+    },
+    "graduate": {
+      "title_one": "Companies",
+      "title_two": "who have already posted projects on our platform",
+      "items": {
+        "0": {
+          "content": "Skolkovo",
+          "description": "Startup School - Accelerator for startups at the Pre-Seed, Seed stage"
+        },
+        "1": {
+          "content": "ИДЕЯ",
+          "description": "Infrastructure, socially-oriented project of national scale"
+        },
+        "2": {
+          "content": "DAN",
+          "description": "A performance marketing agency that prioritizes sustainable, long-term growth"
+        },
+        "3": {
+          "content": "ARDA",
+          "description": "An association whose mission is to improve the quality of work of digital agencies, develop the market and work technologies."
+        }
+      }
+    },
+    "speaker": {
+      "title_one": "Remained",
+      "title_two": "questions?",
+      "name_input_placeholder": "Enter your name",
+      "email_input_placeholder": "Your E-mail",
+      "button_text": "Leave a request",
+      "form_description": "Join the platform to become part of the team",
+      "image_title": "Become part of the team!"
+    },
+    "footer": {
+      "brand_title": "STARTUP SEED",
+      "brand_description": "Follow us on social networks:",
+      "menu_site": "SITE MENU",
+      "home": "Home",
+      "about": "About Us",
+      "contacts": "Contacts",
+      "questions": "Questions",
+      "about_project": "ABOUT THE PROJECT",
+      "agreement": "User Agreement",
+      "rules": "Rules",
+      "help": "Help",
+      "project_services": "Project services",
+      "data_year": "©Startup Seed 2024."
+    }
+  },
+  "login": {
+    "title": "Sign in",
+    "email_input_placeholder": "Email",
+    "password_input_placeholder": "Password",
+    "button_text": "Sign in",
+    "forgot_password": "Forgot your password?",
+    "register": "Registration"
+  },
+  "register": {
+    "title": "Registration",
+    "firstname_input_placeholder": "Name",
+    "lastname_input_placeholder": "Surname",
+    "email_input_placeholder": "Email",
+    "password_input_placeholder": "Password",
+    "password_repeat_input_placeholder": "Repeat password",
+    "button_text": "Register",
+    "have_account": "Do you have an account?",
+    "sign_in": "Login"
+  },
+  "roles": {
+    "title": "Please select your role",
+    "role_one": "Employer",
+    "role_two": "Applicant",
+    "button_text": "Continue"
+  },
+  "dashboard": {
+    "home": {
+      "title": "Who is this project for?",
+      "items": {
+        "0": {
+          "content": "For entrepreneurs",
+          "description": "who want to find cool specialists"
+        },
+        "1": {
+          "content": "For business owners",
+          "description": "who want to develop their project"
+        },
+        "2": {
+          "content": "For bloggers and freelancers",
+          "description": "who want to increase profits with new tools"
+        },
+        "3": {
+          "content": "For specialists",
+          "description": "who want to learn new features and cases for promotion"
+        },
+        "4": {
+          "content": "For students",
+          "description": "those who are looking for themselves and everyone who believes that IT is the future"
+        },
+        "5": {
+          "content": "For those",
+          "description": "who wants to spend the whole day in a DIGITAL party, communicating in one language"
+        }
+      }
+    },
+    "pages": {
+      "search_project": {
+        "title": "Projects",
+        "job_title_input_placeholder": "Job Title",
+        "search_button_text": "Search",
+        "create_button_text": "Create Project",
+        "alert_not_found": "No projects found.",
+        "alert_description": "Complete your profile to see projects",
+        "all_option": "All"
+      },
+      "one_project_view": {
+        "title": "PROJECTS",
+        "open_position": "Open Positions",
+        "tasks_and_acheiv": "Tasks and Achievements:",
+        "skills": "Skills:",
+        "reply": "Apply"
+      }
+    },
+    "profile": {
+      "main_information": {
+        "firstname_input_placeholder": "Name",
+        "lastname_input_placeholder": "Surname",
+        "gender_select_placeholder": "Gender",
+        "man_select": "Male",
+        "woman_select": "Female",
+        "not_given_select": "Not specified",
+        "birthday_input_placeholder": "Birthday",
+        "country_input_placeholder": "Country",
+        "city_input_placeholder": "City",
+        "button_text": "Save"
+      },
+      "professional_information": {
+        "title": "Professional information",
+        "position_input_label": "Desired position",
+        "position_input_placeholder": "Tester",
+        "level_select_label": "Level of experience",
+        "items": {
+          "0": {
+            "title": "Junior"
+          },
+          "1": {
+            "title": "Middle"
+          },
+          "2": {
+            "title": "Senior"
+          }
+        },
+        "language_input_label": "Foreign language",
+        "language_input_plaholder": "English, Rus",
+        "language_select_label": "Level",
+        "skills_input_label": "Skills",
+        "skills_input_placeholder": "Javascript, ReactJS, ...",
+        "cancel_button_text": "Cancel",
+        "save_button_text": "Save"
+      },
+      "experience": {
+        "title": "Experience",
+        "job_title_input_label": "Job Title",
+        "job_title_input_placeholder": "Programmer",
+        "company_input_label": "Company",
+        "company_input_placeholder": "Usertech",
+        "start_work_time_label": "Start Date",
+        "finish_work_time_label": "End Date",
+        "checkbox_title": "Up to the present time",
+        "achievement_title": "Your achievements",
+        "achievement_placeholder": "Managed the project for the implementation of electronic document management based on DocsVision ver. 5.0.",
+        "cancel_button_text": "Cancel",
+        "save_button_text": "Save"
+      },
+      "education": {
+        "title": "Education",
+        "speciality_input_label": "Specialty",
+        "speciality_input_placeholder": "Programmer",
+        "edu_institution_label": "Educational Institution",
+        "edu_institution_placeholder": "MSU",
+        "start_work_time_label": "Start of Studies",
+        "finish_work_time_label": "End of Studies",
+        "cancel_button_text": "Cancel",
+        "save_button_text": "Save"
+      },
+      "courses_training": {
+        "title": "Courses and Professional Development",
+        "name_input_label": "Name",
+        "name_input_placeholder": "Enter name",
+        "educational_institution_input_label": "Educational Institution",
+        "edu_institution_input_placeholder": "МГУ",
+        "start_training_time_label": "Start of Training",
+        "finish_training_time_label": "End of Training",
+        "cancel_button_text": "Cancel",
+        "save_button_text": "Save"
+      },
+      "about_me": {
+        "title": "About Me",
+        "textarea_placeholder": "Describe your tasks and achievements",
+        "cancel_button_text": "Cancel",
+        "save_button_text": "Save"
+      }
+    },
+    "myProjects": {
+      "current": {
+        "title": "You have no active projects",
+        "description": "To find them, go to the section",
+        "sub_text_one": "“Projects”",
+        "sub_text_two": "or",
+        "sub_text_three": "create your own",
+        "my_project": "MY PROJECTS",
+        "button_text": "Create Project"
+      },
+      "create": {
+        "create_project": "Create Project",
+        "edit_project": "Edit Project",
+        "name_input_label": "Name",
+        "name_input_placeholder": "Project Name",
+        "description_input_label": "Description",
+        "description_input_placeholder": "Project Description",
+        "project_team": "Project Team",
+        "add_position_button_text": "Add Position",
+        "edit_button_text": "Edit",
+        "send_to_check_button_text": "Send for Review",
+        "extra_form": {
+          "specialist_input_label": "Specialist",
+          "count_people_input_label": "How many people are needed?",
+          "how_many_now_input_label": "How many are there now?",
+          "delete_button_text": "Delete",
+          "add_button_text": "Add",
+          "desired_position_input_label": "Desired Position",
+          "desired_position_input_placeholder": "Tester",
+          "level_select_label": "Level",
+          "tasks_and_acheiv": "Tasks and Achievements",
+          "skills": "Skills",
+          "remove_button_text": "Remove"
+        }
+      }
+    },
+    "messages": {
+      "search_chat_input_placeholder": "Search Chat",
+      "all_messages": "All Messages",
+      "project_text": "Project:",
+      "enter_message_input_placeholder": "Enter a message",
+      "alert_text": "The chat will be available when the project manager responds to you"
+    },
+    "featured": {
+      "title": "Favorites",
+      "not_data": "You have no active favorites",
+      "not_found": "No favorites found."
+    },
+    "settings": {
+      "title": "Settings",
+      "email_input_label": "E-mail",
+      "email_input_placeholder": "Yourmail@mail.ru",
+      "email_input_button": "Change",
+      "phone_input_label": "Phone Number",
+      "phone_input_placeholder": "Phone Number",
+      "phone_input_button": "Change",
+      "password_input_label": "Password",
+      "password_input_placeholder": "••••••••••••••",
+      "password_input_button": "Change",
+      "time_input_label": "Time Zone",
+      "button_text": "Delete Account",
+      "email_modal": {
+        "title": "EMAIL CHANGE",
+        "description": "An email will be sent to the new address you provided",
+        "subtitle_one": "with a confirmation code",
+        "subtitle_two": "which you will need to enter in the next step.",
+        "email_input_label": "E-mail",
+        "email_input_placeholder": "New yourmail@mail.ru",
+        "confirm_code": "Confirmation Code",
+        "cancel_button_text": "Cancel",
+        "save_button_text": "Get Confirmation Code",
+        "send_try": "Resend Code"
+      },
+      "password_modal": {
+        "title": "PASSWORD CHANGE",
+        "description": "After changing the password, you will be logged out of your account",
+        "current_password_input": "Current Password",
+        "new_password_input": "New Password",
+        "repeat_new_password_input": "Repeat New Password",
+        "cancel_button_text": "Cancel",
+        "save_button_text": "Save"
+      }
+    },
+    "sidebarItems": {
+      "user_type_one": "Employer",
+      "user_type_two": "Job Seeker",
+      "home_link": "Home",
+      "pages_link": "Pages",
+      "add_project_link": "Add Project",
+      "search_project_link": "Find Project",
+      "profile_link": "Profile",
+      "my_project_link": "My Projects",
+      "messages_link": "Messages",
+      "favorites_link": "Favorites",
+      "settings_link": "Settings",
+      "logout_link": "Logout"
+    },
+    "header": {
+      "link_one": "Projects",
+      "link_two": "Specialists",
+      "specialists": {
+        "title": "Specialists",
+        "search_input_placeholder": "Job Title",
+        "all_option": "All",
+        "search_button_text": "Search",
+        "not_found": "No specialists found.",
+        "details": {
+          "title": "Professional Information",
+          "send_invite_button_text": "Send Invitation",
+          "profileCard": {
+            "not_look_for_project": "Not Looking for a Project",
+            "look_for_project": "Looking for a Project",
+            "sex_label": "Gender:",
+            "man": "Male",
+            "birthday": "Date of Birth:",
+            "country": "Country:",
+            "city": "City:"
+          },
+          "specialCard": {
+            "job_title": "Job Title:",
+            "foreign": "Foreign:",
+            "level": "Level:",
+            "level2": "Foreign:"
+          },
+          "modalCard": {
+            "invitation": "Invitation for:",
+            "write_letter": "Write a Letter",
+            "input_placeholder": "Comment",
+            "cancel_button_text": "Cancel",
+            "send_button_text": "Send"
+          }
+        }
+      }
+    }
+  },
+  "extraComponents": {
+    "allProjectDetails": {
+      "title": "Open Positions",
+      "tasks_and_acheiv": "Tasks and Achievements:",
+      "skills": "Skills:",
+      "reply": "Apply",
+      "write_letter": "Write a Letter",
+      "write_letter_input_placeholder": "Comment",
+      "cancel_button_text": "Cancel",
+      "send_button_text": "Send"
+    },
+    "deleteModal": {
+      "delete_text": "Delete",
+      "delete_type_one": "account",
+      "delete_type_two": "item",
+      "confirm_text": "Are you sure you want to delete?",
+      "delete_button_text": "Delete",
+      "cancel_button_text": "Cancel"
+    },
+    "workPositionCard": {
+      "tasks_and_acheiv": "Tasks and Achievements:",
+      "skills": "Skills:"
+    },
+    "aboutData": {
+      "delete_button_text": "Delete",
+      "save_button_text": "Save"
+    },
+    "educationData": {
+      "speciality_input_label": "Specialty",
+      "speciality_input_placeholder": "Programmer",
+      "edu_institution_label": "Educational Institution",
+      "edu_institution_input_placeholder": "MSU",
+      "start_training_time_label": "Start of Education",
+      "finish_training_time_label": "End of Education",
+      "delete_button_text": "Delete",
+      "save_button_text": "Save"
+    },
+    "experienceData": {
+      "job_title_input_label": "Job Title",
+      "job_title_input_placeholder": "Programmer",
+      "company_input_label": "Company",
+      "company_input_placeholder": "Usertech",
+      "start_work_time_label": "Start of Work",
+      "finish_work_time_label": "End of Work",
+      "present_time_input_label": "Present Time",
+      "your_achievements_input_label": "Your Achievements",
+      "your_achievements_input_placeholder": "Led the project to implement electronic document management based on DocsVision ver. 5.0.",
+      "delete_button_text": "Delete",
+      "save_button_text": "Save"
+    },
+    "professionalInfoData": {
+      "desired_position_input_label": "Desired Position",
+      "desired_position_input_placeholder": "Tester",
+      "level": "Level",
+      "foreign_language_input_label": "Foreign Language",
+      "foreign_language_input_placeholder": "English",
+      "lang_level": "Level",
+      "skills_input_label": "Skills",
+      "skills_input_placeholder": "Js",
+      "delete_button_text": "Delete",
+      "save_button_text": "Save"
+    },
+    "projectsDetails": {
+      "open_position": "Open Positions"
+    },
+    "allProjectsData": {
+      "not_found": "Projects not found."
+    },
+    "projectCard": {
+      "look_text": "View"
+    },
+    "replyForm": {
+      "tasks_and_acheiv": "Tasks and Achievements:",
+      "skills": "Skills:",
+      "write_letter": "Write a Letter",
+      "write_letter_input_placeholder": "Comment",
+      "cancel_button_text": "Cancel",
+      "send_button_text": "Send"
+    },
+    "specializationCard": {
+      "not_found": "Experts not found."
+    },
+    "courseDataPage": {
+      "name_input_label": "Name",
+      "name_input_placeholder": "Enter name",
+      "education_input_label": "Educational Institution",
+      "education_input_placeholder": "МГУ",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "delete_button_text": "Delete",
+      "save_button_text": "Save"
+    }
+  },
+  "toastMessage": {
+    "loginPage": {
+      "login_password_incorrect": "Incorrect login or password",
+      "login_password_incorrect_more": "Login or password is incorrect."
+    },
+    "registerPage": {
+      "your_information_saved": "Your information has been successfully saved.",
+      "error_occured": "An error occurred.",
+      "server_problem": "A server error occurred.",
+      "password_incorrect": "The password was entered incorrectly.",
+      "password_validation": "Password must be at least 8 characters long"
+    },
+    "detailsPage": {
+      "cant_delete": "You cannot delete this."
+    },
+    "messagesPage": {
+      "not_found": "Not found."
+    },
+    "aboutPage": {
+      "saved_success": "Saved successfully."
+    },
+    "aboutDataPage": {
+      "edit_success": "Successfully edited."
+    },
+    "coursePage": {
+      "saved_success": "Saved successfully."
+    },
+    "courseDataPage": {
+      "edit_success": "Successfully edited."
+    },
+    "educationPage": {
+      "saved_success": "Saved successfully."
+    },
+    "educationDataPage": {
+      "edit_success": "Successfully edited."
+    },
+    "experiencePage": {
+      "saved_success": "Saved successfully."
+    },
+    "experienceDataPage": {
+      "edit_success": "Successfully edited."
+    },
+    "professionalInfoPage": {
+      "saved_success": "Saved successfully."
+    },
+    "professionalInfoDataPage": {
+      "edit_success": "Successfully edited."
+    },
+    "selfPage": {
+      "edit_success": "Successfully edited."
+    },
+    "allProjectsPage": {
+      "fill_full": "Fill in the fields and try again."
+    },
+    "createProjectPage": {
+      "skills_missing": "Some skills are missing, please complete them all.",
+      "required_number": "The required number of assistants may not be filled",
+      "not_images": "No images have been selected for the project.",
+      "project_send_review": "The project is being sent for admin review.",
+      "edit_success": "Your project has been successfully edited.",
+      "not_position": "No available position.",
+      "project_name": "Project name or project description is missing."
+    },
+    "allProjectsDataPage": {
+      "added_success": "Successfully added to favorites.",
+      "try_again": "Try again.",
+      "delete_success": "Successfully removed from favorites.",
+      "reply_project": "You have successfully responded to the project."
+    },
+    "projectDetailCardPage": {
+      "added_success": "Successfully added to favorites.",
+      "try_again": "Try again.",
+      "delete_success": "Successfully removed from favorites."
+    },
+    "projectFormPage": {
+      "retry": "Unable to retry."
+    },
+    "codeModalPage": {
+      "special_code_send": "A special code has been sent to this email address",
+      "edit_success": "Email successfully changed."
+    },
+    "passwordModalPage": {
+      "edit_password": "Password successfully changed.",
+      "new_password": "Check new password and repeat password",
+      "validation": "Password must be at least 8 characters long."
+    },
+    "phoneNumberPage": {
+      "edit_success": "Phone number successfully changed."
+    },
+    "specializationsPage": {
+      "fill_inputs": "Fill in the fields and try again."
+    },
+    "profileReducer": {
+      "delete_success": "Data successfully deleted.",
+      "server_problem": "There is a problem with the server."
+    }
+  }
+}

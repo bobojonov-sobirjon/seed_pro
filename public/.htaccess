@@ -1,0 +1,24 @@
+# 404 xatolar uchun qayta yo'naltirish
+ErrorDocument 404 /index.html
+
+# URL qayta yozish uchun mod_rewrite ni yoqish
+RewriteEngine On
+
+# Asosiy sahifa har qanday yo'naltirilgan so'rov uchun javob beradi
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L,QSA]
+
+# URL manzil oxiridagi slashni olib tashlash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+# PHP sozlamalari
+
+# www ni olib tashlash
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# cPanel tomonidan avtomatik yaratilgan PHP handler
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>

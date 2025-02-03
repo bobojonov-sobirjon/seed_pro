@@ -1,0 +1,642 @@
+{
+  "home": {
+    "header": {
+      "logo": "STARTUP SEED",
+      "home": "家",
+      "about": "关于我们",
+      "reviews": "评论",
+      "questions": "问题",
+      "contacts": "联系方式",
+      "login": "登录",
+      "registration": "登记",
+      "entrance": "入口"
+    },
+    "main": {
+      "top_title": "提出你自己的想法！",
+      "title_one": "启动你的",
+      "title_two": "项目",
+      "title_three": "并找到",
+      "title_four": "团队",
+      "description": "让您的梦想成为现实。发布项目、组建团队、交流经验、提升专业技能",
+      "button_text": "更多详情"
+    },
+    "project": {
+      "title": "关于该项目",
+      "left_title": "STARTUP SEED",
+      "left_description_top": "一个用于发布或搜索项目、专家以及在专业业务和数字社区内分享经验的平台。",
+      "left_description_bottom": "Startup Seed 是指在志同道合的专家团队中实施您的想法。",
+      "right_count_one": "55+",
+      "right_count_one_title": "注册专业人士",
+      "right_count_two": "60+",
+      "right_count_two_title": "初创公司和见解",
+      "right_count_three": "500+",
+      "right_count_three_title": "有用的联系方式",
+      "right_count_four_title": "在一个很酷的团队中实现职业成长",
+      "error_image": "图像尺寸必须为 70x70."
+    },
+    "howWork": {
+      "top_title": "这是如何运作的？",
+      "bottom_title": "这是如何运作的？",
+      "description": "如果您是初创企业所有者",
+      "items": {
+        "0": {
+          "content": "在您的个人帐户中注册并填写您的个​​人资料"
+        },
+        "1": {
+          "content": "检查您的个人资料后，发布您的项目"
+        },
+        "2": {
+          "content": "寻找酷专家"
+        },
+        "3": {
+          "content": "在与专业人士的团队中实施您的想法"
+        }
+      },
+      "button_text": "加入"
+    },
+    "career": {
+      "title_one": "Startup seed",
+      "title_two": "- 你的斋戒",
+      "title_four": "采石场自动扶梯",
+      "items": {
+        "0": {
+          "content": "登记",
+          "description": "在平台上注册并表明您的技能"
+        },
+        "1": {
+          "content": "寻找项目",
+          "description": "选择您的项目以及您想要发展的方向"
+        },
+        "2": {
+          "content": "展示你自己！",
+          "description": "释放你的潜力并向所有人证明你的能力。"
+        },
+        "3": {
+          "content": "获得职位",
+          "description": "在快速增长的项目中占据应有的位置"
+        }
+      }
+    },
+    "forWho": {
+      "title_top": "这个项目适合谁？",
+      "title_bottom": "这个项目适合谁？",
+      "items": {
+        "0": {
+          "content": "对于企业家",
+          "description": "想要找到很酷的专家的人"
+        },
+        "1": {
+          "content": "对于企业主",
+          "description": "想要开发自己的项目的人"
+        },
+        "2": {
+          "content": "对于博主和自由职业者",
+          "description": "想要通过新工具增加利润的人"
+        },
+        "3": {
+          "content": "对于专家",
+          "description": "想了解最新功能和推广案例"
+        },
+        "4": {
+          "content": "对于学生",
+          "description": "那些寻找自我的人和所有相信 IT 就是未来的人"
+        },
+        "5": {
+          "content": "对于那些",
+          "description": "谁想花一整天的时间参加数字聚会，用同一种语言进行交流"
+        }
+      }
+    },
+    "registerCard": {
+      "title": "登记",
+      "name_input_placeholder": "输入姓名",
+      "email_input_placeholder": "您的电子邮件",
+      "button_text": "登记",
+      "form_description": "单击该按钮即表示您同意处理个人数据"
+    },
+    "graduate": {
+      "title_one": "公司",
+      "title_two": "谁已经在我们的平台上发布了项目",
+      "items": {
+        "0": {
+          "content": "Skolkovo",
+          "description": "创业学校 - 种子期前、种子期初创企业的加速器"
+        },
+        "1": {
+          "content": "ИДЕЯ",
+          "description": "共和规模的基础设施、社会导向项目"
+        },
+        "2": {
+          "content": "DAN",
+          "description": "一家优先考虑可持续、长期增长的绩效营销机构"
+        },
+        "3": {
+          "content": "ARDA",
+          "description": "该协会的使命是提高数字机构的工作质量、开发市场和工作技术。"
+        }
+      }
+    },
+    "speaker": {
+      "title_one": "剩下的",
+      "title_two": "问题？",
+      "name_input_placeholder": "输入姓名",
+      "email_input_placeholder": "您的电子邮件",
+      "button_text": "留下请求",
+      "form_description": "加入平台成为团队的一员",
+      "image_title": "成为团队的一员！"
+    },
+    "footer": {
+      "brand_title": "STARTUP SEED",
+      "brand_description": "在社交媒体上关注我们。网络：",
+      "menu_site": "网站菜单",
+      "home": "家",
+      "about": "关于我们",
+      "contacts": "联系方式",
+      "questions": "问题",
+      "about_project": "关于该项目",
+      "agreement": "用户协议",
+      "rules": "规则",
+      "help": "帮助",
+      "project_services": "项目服务",
+      "data_year": "©Startup Seed 2024."
+    }
+  },
+  "login": {
+    "title": "入口",
+    "email_input_placeholder": "电子邮件",
+    "password_input_placeholder": "密码",
+    "button_text": "入口",
+    "forgot_password": "忘记密码了吗？",
+    "register": "登记"
+  },
+  "register": {
+    "title": "登记",
+    "firstname_input_placeholder": "姓名",
+    "lastname_input_placeholder": "姓",
+    "email_input_placeholder": "电子邮件",
+    "password_input_placeholder": "密码",
+    "password_repeat_input_placeholder": "重复密码",
+    "button_text": "登记",
+    "have_account": "您有帐户吗？",
+    "sign_in": "登入"
+  },
+  "roles": {
+    "title": "请选择您的角色",
+    "role_one": "雇主",
+    "role_two": "申请人",
+    "button_text": "继续"
+  },
+  "dashboard": {
+    "home": {
+      "title": "这个项目适合谁？",
+      "items": {
+        "0": {
+          "content": "对于企业家",
+          "description": "想要找到很酷的专家的人"
+        },
+        "1": {
+          "content": "对于企业主",
+          "description": "想要开发自己的项目的人"
+        },
+        "2": {
+          "content": "对于博主和自由职业者",
+          "description": "想要通过新工具增加利润的人"
+        },
+        "3": {
+          "content": "对于专家",
+          "description": "想了解最新功能和推广案例"
+        },
+        "4": {
+          "content": "对于学生",
+          "description": "那些寻找自我的人和所有相信 IT 就是未来的人"
+        },
+        "5": {
+          "content": "对于那些",
+          "description": "谁想花一整天的时间参加数字聚会，用同一种语言进行交流"
+        }
+      }
+    },
+    "pages": {
+      "search_project": {
+        "title": "项目",
+        "job_title_input_placeholder": "职位",
+        "search_button_text": "搜索",
+        "create_button_text": "创建项目",
+        "alert_not_found": "未找到项目。",
+        "alert_description": "请完整填写个人资料以查看项目",
+        "all_option": "所有"
+      },
+      "one_project_view": {
+        "title": "项目",
+        "open_position": "开放职位",
+        "tasks_and_acheiv": "任务与成就:",
+        "skills": "技能:",
+        "reply": "申请"
+      }
+    },
+    "profile": {
+      "main_information": {
+        "firstname_input_placeholder": "姓名",
+        "lastname_input_placeholder": "姓",
+        "gender_select_placeholder": "性别",
+        "man_select": "男性",
+        "woman_select": "女性",
+        "not_given_select": "未指定",
+        "birthday_input_placeholder": "出生日期",
+        "country_input_placeholder": "国家",
+        "city_input_placeholder": "城市",
+        "button_text": "节省"
+      },
+      "professional_information": {
+        "title": "专业资讯",
+        "position_input_label": "所需位置",
+        "position_input_placeholder": "测试员",
+        "level_select_label": "经验水平",
+        "items": {
+          "0": {
+            "title": "Junior"
+          },
+          "1": {
+            "title": "Middle"
+          },
+          "2": {
+            "title": "Senior"
+          }
+        },
+        "language_input_label": "外语",
+        "language_input_plaholder": "English, Rus 英语、俄语",
+        "language_select_label": "等级",
+        "skills_input_label": "技能",
+        "skills_input_placeholder": "Javascript, ReactJS, ...",
+        "cancel_button_text": "取消",
+        "save_button_text": "节省"
+      },
+      "experience": {
+        "title": "经验",
+        "job_title_input_label": "职称",
+        "job_title_input_placeholder": "程序员",
+        "company_input_label": "公司",
+        "company_input_placeholder": "Usertech",
+        "start_work_time_label": "入门",
+        "finish_work_time_label": "收尾工作",
+        "checkbox_title": "迄今为止",
+        "achievement_title": "你的成就",
+        "achievement_placeholder": "管理基于DocsVision ver.的电子文档管理实施项目5.0。",
+        "cancel_button_text": "取消",
+        "save_button_text": "节省"
+      },
+      "education": {
+        "title": "教育",
+        "speciality_input_label": "专业",
+        "speciality_input_placeholder": "程序员",
+        "edu_institution_label": "教育机构",
+        "edu_institution_placeholder": "莫斯科国立大学",
+        "start_work_time_label": "开始学习",
+        "finish_work_time_label": "结束学习",
+        "cancel_button_text": "取消",
+        "save_button_text": "保存"
+      },
+      "courses_training": {
+        "title": "课程与职业发展",
+        "name_input_label": "名称",
+        "name_input_placeholder": "输入名称",
+        "educational_institution_input_label": "教育机构",
+        "edu_institution_input_placeholder": "МГУ",
+        "start_training_time_label": "开始培训",
+        "finish_training_time_label": "结束培训",
+        "cancel_button_text": "取消",
+        "save_button_text": "保存"
+      },
+      "about_me": {
+        "title": "关于我",
+        "textarea_placeholder": "描述您的任务和成就",
+        "cancel_button_text": "取消",
+        "save_button_text": "保存"
+      }
+    },
+    "myProjects": {
+      "current": {
+        "title": "您没有活跃的项目",
+        "description": "要查找它们，请转到部分",
+        "sub_text_one": "“项目”",
+        "sub_text_two": "或",
+        "sub_text_three": "创建自己的项目",
+        "my_project": "我的项目",
+        "button_text": "创建项目"
+      },
+      "create": {
+        "create_project": "创建项目",
+        "edit_project": "编辑项目",
+        "name_input_label": "名称",
+        "name_input_placeholder": "项目名称",
+        "description_input_label": "描述",
+        "description_input_placeholder": "项目描述",
+        "project_team": "项目团队",
+        "add_position_button_text": "添加职位",
+        "edit_button_text": "编辑",
+        "send_to_check_button_text": "发送审核",
+        "extra_form": {
+          "specialist_input_label": "专家",
+          "count_people_input_label": "需要多少人？",
+          "how_many_now_input_label": "现在有多少人？",
+          "delete_button_text": "删除",
+          "add_button_text": "添加",
+          "desired_position_input_label": "期望职位",
+          "desired_position_input_placeholder": "测试员",
+          "level_select_label": "级别",
+          "tasks_and_acheiv": "任务与成就",
+          "skills": "技能",
+          "remove_button_text": "移除"
+        }
+      }
+    },
+    "messages": {
+      "search_chat_input_placeholder": "搜索聊天",
+      "all_messages": "所有消息",
+      "project_text": "项目:",
+      "enter_message_input_placeholder": "输入消息",
+      "alert_text": "当项目经理回复您时，聊天将可用"
+    },
+    "featured": {
+      "title": "收藏",
+      "not_data": "您没有活跃的收藏",
+      "not_found": "未找到收藏。"
+    },
+    "settings": {
+      "title": "设置",
+      "email_input_label": "电子邮件",
+      "email_input_placeholder": "Yourmail@mail.ru",
+      "email_input_button": "更改",
+      "phone_input_label": "电话号码",
+      "phone_input_placeholder": "电话号码",
+      "phone_input_button": "更改",
+      "password_input_label": "密码",
+      "password_input_placeholder": "••••••••••••••",
+      "password_input_button": "更改",
+      "time_input_label": "时区",
+      "button_text": "删除账户",
+      "email_modal": {
+        "title": "更改电子邮件",
+        "description": "一封邮件将发送到您提供的新地址",
+        "subtitle_one": "附带确认码",
+        "subtitle_two": "您需要在下一步中输入该确认码。",
+        "email_input_label": "电子邮件",
+        "email_input_placeholder": "新的 yourmail@mail.ru",
+        "confirm_code": "确认码",
+        "cancel_button_text": "取消",
+        "save_button_text": "获取确认码",
+        "send_try": "重新发送验证码"
+      },
+      "password_modal": {
+        "title": "更改密码",
+        "description": "更改密码后，您将退出账户",
+        "current_password_input": "当前密码",
+        "new_password_input": "新密码",
+        "repeat_new_password_input": "重复新密码",
+        "cancel_button_text": "取消",
+        "save_button_text": "保存"
+      }
+    },
+    "sidebarItems": {
+      "user_type_one": "雇主",
+      "user_type_two": "求职者",
+      "home_link": "首页",
+      "pages_link": "页面",
+      "add_project_link": "添加项目",
+      "search_project_link": "查找项目",
+      "profile_link": "个人资料",
+      "my_project_link": "我的项目",
+      "messages_link": "消息",
+      "favorites_link": "收藏",
+      "settings_link": "设置",
+      "logout_link": "退出"
+    },
+    "header": {
+      "link_one": "项目",
+      "link_two": "专家",
+      "specialists": {
+        "title": "专家",
+        "search_input_placeholder": "职位",
+        "all_option": "所有",
+        "search_button_text": "搜索",
+        "not_found": "未找到专家。",
+        "details": {
+          "title": "专业信息",
+          "send_invite_button_text": "发送邀请",
+          "profileCard": {
+            "not_look_for_project": "不寻找项目",
+            "look_for_project": "寻找项目",
+            "sex_label": "性别:",
+            "man": "男",
+            "birthday": "出生日期:",
+            "country": "国家:",
+            "city": "城市:"
+          },
+          "specialCard": {
+            "job_title": "职位:",
+            "foreign": "外籍:",
+            "level": "级别:",
+            "level2": "F外籍:"
+          },
+          "modalCard": {
+            "invitation": "邀请对象:",
+            "write_letter": "写信",
+            "input_placeholder": "评论",
+            "cancel_button_text": "取消",
+            "send_button_text": "发送"
+          }
+        }
+      }
+    }
+  },
+  "extraComponents": {
+    "allProjectDetails": {
+      "title": "开放职位",
+      "tasks_and_acheiv": "任务与成就:",
+      "skills": "技能:",
+      "reply": "申请",
+      "write_letter": "写信",
+      "write_letter_input_placeholder": "评论",
+      "cancel_button_text": "取消",
+      "send_button_text": "发送"
+    },
+    "deleteModal": {
+      "delete_text": "删除",
+      "delete_type_one": "账户",
+      "delete_type_two": "项目",
+      "confirm_text": "您确定要删除吗？",
+      "delete_button_text": "删除",
+      "cancel_button_text": "取消"
+    },
+    "workPositionCard": {
+      "tasks_and_acheiv": "任务与成就:",
+      "skills": "技能:"
+    },
+    "aboutData": {
+      "delete_button_text": "删除",
+      "save_button_text": "保存"
+    },
+    "educationData": {
+      "speciality_input_label": "专业",
+      "speciality_input_placeholder": "程序员",
+      "edu_institution_label": "教育机构",
+      "edu_institution_input_placeholder": "莫斯科大学",
+      "start_training_time_label": "开始学习",
+      "finish_training_time_label": "结束学习",
+      "delete_button_text": "删除",
+      "save_button_text": "保存"
+    },
+    "experienceData": {
+      "job_title_input_label": "职位",
+      "job_title_input_placeholder": "程序员",
+      "company_input_label": "公司",
+      "company_input_placeholder": "Usertech",
+      "start_work_time_label": "开始工作",
+      "finish_work_time_label": "结束工作",
+      "present_time_input_label": "至今",
+      "your_achievements_input_label": "您的成就",
+      "your_achievements_input_placeholder": "领导了基于DocsVision ver. 5.0的电子文档管理实施项目。",
+      "delete_button_text": "删除",
+      "save_button_text": "保存"
+    },
+    "professionalInfoData": {
+      "desired_position_input_label": "期望职位",
+      "desired_position_input_placeholder": "测试员",
+      "level": "级别",
+      "foreign_language_input_label": "外语",
+      "foreign_language_input_placeholder": "英语",
+      "lang_level": "级别",
+      "skills_input_label": "技能",
+      "skills_input_placeholder": "Js",
+      "delete_button_text": "删除",
+      "save_button_text": "保存"
+    },
+    "projectsDetails": {
+      "open_position": "开放职位"
+    },
+    "allProjectsData": {
+      "not_found": "未找到项目。"
+    },
+    "projectCard": {
+      "look_text": "查看"
+    },
+    "replyForm": {
+      "tasks_and_acheiv": "任务与成就:",
+      "skills": "技能:",
+      "write_letter": "写信",
+      "write_letter_input_placeholder": "评论",
+      "cancel_button_text": "取消",
+      "send_button_text": "发送"
+    },
+    "specializationCard": {
+      "not_found": "未找到专家。"
+    },
+    "courseDataPage": {
+      "name_input_label": "名称",
+      "name_input_placeholder": "输入名称",
+      "education_input_label": "教育机构",
+      "education_input_placeholder": "МГУ",
+      "start_date": "开始日期",
+      "end_date": "结束日期",
+      "delete_button_text": "删除",
+      "save_button_text": "保存"
+    }
+  },
+  "toastMessage": {
+    "loginPage": {
+      "login_password_incorrect": "登录名或密码不正确",
+      "login_password_incorrect_more": "登录名或密码错误。"
+    },
+    "registerPage": {
+      "your_information_saved": "您的信息已成功保存。",
+      "error_occured": "发生了错误。",
+      "server_problem": "服务器发生错误。",
+      "password_incorrect": "密码输入错误。",
+      "password_validation": "密码长度必须至少为8个字符"
+    },
+    "detailsPage": {
+      "cant_delete": "您无法删除此项。"
+    },
+    "messagesPage": {
+      "not_found": "未找到。"
+    },
+    "aboutPage": {
+      "saved_success": "保存成功。"
+    },
+    "aboutDataPage": {
+      "edit_success": "编辑成功。"
+    },
+    "coursePage": {
+      "saved_success": "保存成功。"
+    },
+    "courseDataPage": {
+      "edit_success": "编辑成功。"
+    },
+    "educationPage": {
+      "saved_success": "保存成功。"
+    },
+    "educationDataPage": {
+      "edit_success": "编辑成功。"
+    },
+    "experiencePage": {
+      "saved_success": "保存成功。"
+    },
+    "experienceDataPage": {
+      "edit_success": "编辑成功。"
+    },
+    "professionalInfoPage": {
+      "saved_success": "保存成功。"
+    },
+    "professionalInfoDataPage": {
+      "edit_success": "编辑成功。"
+    },
+    "selfPage": {
+      "edit_success": "编辑成功。"
+    },
+    "allProjectsPage": {
+      "fill_full": "填写字段并重试。"
+    },
+    "createProjectPage": {
+      "skills_missing": "某些技能缺失，请完成所有技能。",
+      "required_number": "所需的助手数量可能未填写",
+      "not_images": "项目未选择任何图片。",
+      "project_send_review": "项目正在发送给管理员审核。",
+      "edit_success": "您的项目已成功编辑。",
+      "not_position": "无可用职位。",
+      "project_name": "项目名称或项目描述缺失。"
+    },
+    "allProjectsDataPage": {
+      "added_success": "成功添加到收藏。",
+      "try_again": "请再试一次。",
+      "delete_success": "已成功从收藏中删除。",
+      "reply_project": "您已成功响应该项目。"
+    },
+    "projectDetailCardPage": {
+      "added_success": "成功添加到收藏。",
+      "try_again": "请再试一次。",
+      "delete_success": "已成功从收藏中删除。"
+    },
+    "projectFormPage": {
+      "retry": "无法重试。"
+    },
+    "codeModalPage": {
+      "special_code_send": "已向此电子邮件地址发送了特别代码",
+      "edit_success": "电子邮件成功更改。"
+    },
+    "passwordModalPage": {
+      "edit_password": "密码成功更改。",
+      "new_password": "检查新密码并重复密码",
+      "validation": "密码长度必须至少为8个字符。"
+    },
+    "phoneNumberPage": {
+      "edit_success": "电话号码成功更改。"
+    },
+    "specializationsPage": {
+      "fill_inputs": "填写字段并重试。"
+    },
+    "profileReducer": {
+      "delete_success": "数据成功删除。",
+      "server_problem": "服务器出现问题。"
+    }
+  }
+}
