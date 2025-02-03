@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 import { SendModal } from "../../../../components";
 
 const ProjectResponse = (props) => {
-    const { project } = props;
-     const [openSendModal, setSendApplyModal] = useState(false);
-      const handleClose = () => setSendApplyModal(false);
-  return project && project.length>0 && project.map(item=>
-    (
-        <div
+  const { project } = props;
+  const [openSendModal, setSendApplyModal] = useState(false);
+  const handleClose = () => setSendApplyModal(false);
+  return (
+    project &&
+    project.length > 0 &&
+    project.map((item) => (
+      <div
         key={item?.id}
         className="flex sm:flex-row flex-col md:gap-0 gap-6 justify-between items-center p-2 lg:p-6 bg-white shadow-lg rounded-lg"
       >
@@ -23,9 +25,9 @@ const ProjectResponse = (props) => {
               <h3 className="text-xl leading-[22px] font-bold text-custom-gray">
                 {item?.first_name} {item?.last_name}
               </h3>
-                <p className="text-[13px] leading-5 font-semibold text-[#A7A5A5] underline">
-                  Посмотреть профиль
-                </p>
+              <p className="text-[13px] leading-5 font-semibold text-[#A7A5A5] underline">
+                Посмотреть профиль
+              </p>
             </div>
             <span className="text-4 leading-6 font-semibold text-main-green mt-1">
               {item?.information?.length > 0 &&
@@ -57,9 +59,8 @@ const ProjectResponse = (props) => {
           data={project[0]}
         />
       </div>
-      )
-  )
-  
-}
+    ))
+  );
+};
 
-export default ProjectResponse
+export default ProjectResponse;
