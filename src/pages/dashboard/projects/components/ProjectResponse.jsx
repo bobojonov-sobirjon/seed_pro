@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import noImage from "../../../../assets/images/noImage.png";
-import { Link } from "react-router-dom";
 import { SendModal } from "../../../../components";
 
 const ProjectResponse = (props) => {

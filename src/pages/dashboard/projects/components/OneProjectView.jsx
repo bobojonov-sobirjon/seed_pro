@@ -29,7 +29,7 @@ function OneProjectView(props) {
     data: {},
   });
 
-  console.log(state);
+  // console.log(state);
   // console.log(user_id);
 
   // open add unit modal
