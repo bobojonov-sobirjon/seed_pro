@@ -27,7 +27,7 @@ function Users(props) {
                         role='button'
                         key={item.id} className={`getMessagesUsers select-none flex items-center gap-2 p-3 rounded-lg shadow mb-3 cursor-pointer transition-all ${item.id === selectedUser.id ? "bg-custom-gray text-white" : "bg-white text-custom-gray hover:bg-gray-100"}`}
                         onClick={() => {
-                            getMessages(item);
+                            props.getMessages(item);
                             handleDelete(item.id);
                         }}>
 

@@ -206,7 +206,7 @@ const Messages = (props) => {
       if (res.status === 200 || res.status === 201) {
         setSocket(
           new W3CWebSocket(
-            `${import.meta.env.VITE_SOCKET_SERVER_URL}message/${
+            `${import.meta.env.VITE_SOCKET_SERVER_URL}chat/${
               res.data.id
             }/?token=${cookie.get("user")}`
           )
@@ -220,32 +220,24 @@ const Messages = (props) => {
   }, []);
 
   // send message
-  const sendMessage = (retryCount = 5) => {
-    if (!socket) return;
-  
-    if (socket.readyState === WebSocket.OPEN) {
-      if (message_ref.current?.value) {
-        const messageData = {
+  const sendMessage = () => {
+    if (
+      socket &&
+      socket.readyState === WebSocket.OPEN &&
+      message_ref.current.value
+    ) {
+      socket.send(
+        JSON.stringify({
           message: message_ref.current.value,
           info: "",
-        };
-  
-        socket.send(JSON.stringify(messageData));
-        message_ref.current.value = "";
-        message_ref.current.focus();
-  
-        const audio = new Audio("/audio/sending.mp3");
-        audio.play();
-      }
-    } else if (retryCount > 0) {
-      console.log("WebSocket hali tayyor emas, 500ms kutib qayta urinib ko'ramiz...");
-      setTimeout(() => sendMessage(retryCount - 1), 500);
-    } else {
-      console.error("WebSocket hali ham ochilmadi. Xabar jo‘natilmadi.");
+        })
+      );
+      message_ref.current.value = "";
+      message_ref.current.focus();
+      const audio = new Audio("/audio/sending.mp3");
+      audio.play();
     }
   };
-  
-  
 
   const enterClickHandler = (event) => {
     if (event.keyCode === 13) sendMessage();
