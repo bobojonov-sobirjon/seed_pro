@@ -120,15 +120,18 @@ function OneProjectView(props) {
                     <IoStarOutline className='text-3xl text-gray-500' />
                 </div> */}
         </div>
-
-        <div className="my-14 flex flex-col gap-2">
-          <h2 className="text-xl lg:text-2xl text-custom-gray font-gunterz lg:text-left">
-            Список команды
-          </h2>
-          <div className="flex flex-col gap-4 mt-4">
-            <TeamListItem team={state?.group_emp_list} />
+        {state?.group_emp_list.length > 0 ? (
+          <div className="my-14 flex flex-col gap-2">
+            <h2 className="text-xl lg:text-2xl text-custom-gray font-gunterz lg:text-left">
+              Список команды
+            </h2>
+            <div className="flex flex-col gap-4 mt-4">
+              <TeamListItem team={state?.group_emp_list} />
+            </div>
           </div>
-        </div>
+        ) : (
+          ""
+        )}
         <div className="my-14 flex flex-col gap-2">
           <h2 className="text-xl lg:text-2xl text-custom-gray font-gunterz lg:text-left">
             {t("dashboard.pages.one_project_view.open_position")}
@@ -138,15 +141,18 @@ function OneProjectView(props) {
             openReplyModalHandler={openReplyModalHandler}
           />
         </div>
-
-        <div className="my-14 flex flex-col gap-2">
-          <h2 className="text-xl lg:text-2xl text-custom-gray font-gunterz lg:text-left">
-            отклик на проект
-          </h2>
-          <div className="flex flex-col gap-4 mt-4">
-            <ProjectResponse project={state?.reply_to_project} />
+        {state?.reply_to_project ? (
+          <div className="my-14 flex flex-col gap-2">
+            <h2 className="text-xl lg:text-2xl text-custom-gray font-gunterz lg:text-left">
+              отклик на проект
+            </h2>
+            <div className="flex flex-col gap-4 mt-4">
+              <ProjectResponse project={state?.reply_to_project} />
+            </div>
           </div>
-        </div>
+        ) : (
+          ""
+        )}
       </div>
 
       {/* open reply modal */}
