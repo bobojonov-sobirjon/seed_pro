@@ -141,7 +141,7 @@ function OneProjectView(props) {
             openReplyModalHandler={openReplyModalHandler}
           />
         </div>
-        {state?.reply_to_project ? (
+        {state?.reply_to_project.length>0 ? (
           <div className="my-14 flex flex-col gap-2">
             <h2 className="text-xl lg:text-2xl text-custom-gray font-gunterz lg:text-left">
               отклик на проект

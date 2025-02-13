@@ -27,8 +27,8 @@ const Profile = (props) => {
   }
 
   return (
-    <main className='h-[90vh] overflow-y-auto'>
-      <div className='max-w-5xl mx-auto my-10 p-0 lg:p-8 bg-white shadow-lg rounded-lg'>
+    <main className='h-[90vh] overflow-y-auto overflow-x-hidden'>
+      <div className='max-w-5xl mx-auto w-full my-10 p-0 lg:p-8 bg-white shadow-lg rounded-lg'>
         {/* just self */}
         <Self
           profileData={props.profileData}
