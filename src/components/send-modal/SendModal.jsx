@@ -17,7 +17,6 @@ function SendModal({ data, isOpen, onClose = true }) {
   let { user_id } = useAuth();
   const text_ref = useRef();
   const [projectId, setProjectId] = useState(null);
-  const [socket, setSocket] = useState(null);
 
   const [projects, setData] = useState([]);
   // reply handler
@@ -39,9 +38,9 @@ function SendModal({ data, isOpen, onClose = true }) {
 
   const getData = async () => {
     try {
-      const { data } = await axiosInstances.get("/projects/");
-      setData(data?.results);
-      setProjectId(data?.results[0]?.id);
+      const { data } = await axiosInstances.get("/employer/");
+      setData(data);
+      setProjectId(data[0]?.id);
     } catch (error) {
       console.log(error);
     }

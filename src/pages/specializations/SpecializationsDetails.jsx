@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   ProfileCard,
-SendModal,
+  SendModal,
   SpecializationDetailsCard,
 } from "../../components";
 
