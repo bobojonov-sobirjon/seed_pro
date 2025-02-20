@@ -18,7 +18,7 @@ const CreateProject = (props) => {
   const [data, setData] = useState(state ? state.komanda : []);
   const [file, setFile] = useState(null);
   const [extraData, setExtraData] = useState(state ? state.employees : []);
-  const [isChecked, setIsChecked] = useState(state.is_active);
+  const [isChecked, setIsChecked] = useState(state?.is_active);
   const name_ref = useRef();
   const desc_ref = useRef();
   const tag_ref = useRef();

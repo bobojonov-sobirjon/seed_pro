@@ -9,7 +9,7 @@ import Employee from '../../../components/work-position-card/Employee';
 const ProjectsDetails = () => {
   const { state } = useLocation();
   const { t } = useTranslation();
-
+  // console.log(state,"state")
 
   return (
     <div className='max-w-5xl mx-auto my-10'>

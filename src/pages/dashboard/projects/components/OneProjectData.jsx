@@ -4,11 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { levels } from '../../../../utils/options';
 import { useAuth } from '../../../../services/useAuth';
 import { getProfile } from '../../../../redux/reducers/profileReducer';
+import useNotifications from '../../../../services/useNotifications';
 
 function OneProjectData(props) {
     const { state } = props;
     const { t } = useTranslation();
     let { user_id } = useAuth();
+    const {notifications,setNotifications} = useNotifications()
 
     // get all projects
     useEffect(() => {
@@ -19,6 +21,7 @@ function OneProjectData(props) {
 
         return () => controller.abort();
     }, []);
+    
     return (
         state && state.komanda?.length > 0 && state.komanda.map(elem => (
             elem?.length > 0 && elem.map(item => (
@@ -71,6 +74,7 @@ function OneProjectData(props) {
                             </button>
                         </div>
                     )}
+                    
                 </div>
             ))
         ))

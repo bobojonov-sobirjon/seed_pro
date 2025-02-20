@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import noImage from "../../../../assets/images/noImage.png";
 import { SendModal } from "../../../../components";
+import { Link } from "react-router-dom";
 
 const ProjectResponse = (props) => {
   const { project } = props;
@@ -24,9 +25,12 @@ const ProjectResponse = (props) => {
               <h3 className="text-xl leading-[22px] font-bold text-custom-gray">
                 {item?.first_name} {item?.last_name}
               </h3>
-              <p className="text-[13px] leading-5 font-semibold text-[#A7A5A5] underline">
+              <Link
+                to={`/admin/profile?user_id=${item?.id}`}
+                className="text-[13px] leading-5 font-semibold text-[#A7A5A5] underline"
+              >
                 Посмотреть профиль
-              </p>
+              </Link>
             </div>
             <span className="text-4 leading-6 font-semibold text-main-green mt-1">
               {item?.information?.length > 0 &&
