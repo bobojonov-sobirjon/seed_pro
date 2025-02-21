@@ -4,13 +4,13 @@ import { SendModal } from "../../../../components";
 import { Link } from "react-router-dom";
 
 const ProjectResponse = (props) => {
-  const { project } = props;
+  const { replyUser } = props;
   const [openSendModal, setSendApplyModal] = useState(false);
   const handleClose = () => setSendApplyModal(false);
   return (
-    project &&
-    project.length > 0 &&
-    project.map((item) => (
+    replyUser &&
+    replyUser.length > 0 &&
+    replyUser.map((item) => (
       <div
         key={item?.id}
         className="flex sm:flex-row flex-col md:gap-0 gap-6 justify-between items-center p-2 lg:p-6 bg-white shadow-lg rounded-lg"
@@ -59,7 +59,7 @@ const ProjectResponse = (props) => {
         <SendModal
           isOpen={openSendModal}
           onClose={handleClose}
-          data={project[0]}
+          data={replyUser[0]}
         />
       </div>
     ))

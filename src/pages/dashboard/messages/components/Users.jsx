@@ -6,7 +6,7 @@ import { deleteOneNotification } from '../../../../redux/reducers/notificationsR
 import { deleteOneConversation } from '../../../../redux/reducers/chatReducer';
 
 function Users(props) {
-    const { users, selectedUser, getMessages, removeNotificationWithSelectedUser } = props;
+    const { users, selectedUser} = props;
     const dispatch = useDispatch();
 
     const handleDelete = (notificationId) => {

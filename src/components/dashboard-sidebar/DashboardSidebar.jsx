@@ -139,7 +139,7 @@ const DashboardSidebar = (props) => {
                 props.profileData?.active ? "text-green-700" : "text-red-700"
               }`}
             >
-              {props.profileData.groups &&
+              {props.profileData?.groups &&
               props.profileData?.groups.length > 0 &&
               props.profileData?.groups[0] === 1
                 ? t("dashboard.sidebarItems.user_type_one")

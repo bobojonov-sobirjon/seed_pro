@@ -12,6 +12,7 @@ import { useAuth } from "../../services/useAuth";
 import noImage from "../../assets/images/no-image.png";
 import { BellRing, Settings } from "lucide-react";
 import useNotifications from "../../services/useNotifications";
+import { axiosInstances } from "../../config/config";
 
 const DashboardNavbar = (props) => {
   const { t } = useTranslation();
@@ -19,6 +20,7 @@ const DashboardNavbar = (props) => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
+  const [allNotifications, setAllNotifications] = useState([]);
 
   const { notifications } = useNotifications();
 
@@ -28,6 +30,17 @@ const DashboardNavbar = (props) => {
     }
   };
 
+  const getAllNotifications = async () => {
+    try {
+      const res = await axiosInstances.get(`/notifications/`);
+      setAllNotifications(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    getAllNotifications();
+  }, []);
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
 
@@ -47,26 +60,29 @@ const DashboardNavbar = (props) => {
   }, []);
 
   // delete item
-  const deleteItem = async (item) => {
-    if (item && item.hasOwnProperty("id")) {
-      props.onDeleteOneNotification(item);
+  const deleteItem = async (notification_id) => {
+    try {
+      await axiosInstances.delete(`/notifications/${notification_id}`);
+      getAllNotifications();
+    } catch (error) {
+      console.log(error);
     }
   };
 
   // navigate
   const navigateHandler = (item) => {
-    if (item && item?.recipient.hasOwnProperty("id")) {
+    if (item && item?.recipient?.hasOwnProperty("id")) {
       let obj = {
         receiver: item.recipient?.sender,
         senderId: user_id,
         text: "",
         project: {},
       };
-      navigate("/admin/messages", { state: obj });
+      navigate(`/admin/messages`);
       // setIsOpen(false);
     }
   };
-  console.log("notifications", notifications);
+  console.log("notifications", allNotifications);
 
   return (
     <>
@@ -90,7 +106,7 @@ const DashboardNavbar = (props) => {
             <Settings className="text-black hover:rotate-90 transition-all" />
           </Link>
           <div className="relative cursor-pointer text-left mt-1">
-            <div onClick={() => setIsOpen(!isOpen)} className="">
+            <div onClick={() => setIsOpen((prev) => !prev)} className="">
               <BellRing className="text-black hover:rotate-[12deg] transition-all" />
               {/* count */}
               {/* <div className='absolute -top-[6px] -right-[3px] w-[15px] text-[11.5px] h-[15px] flex items-center justify-center rounded-full bg-[#000] text-white'>
@@ -98,10 +114,10 @@ const DashboardNavbar = (props) => {
               </div> */}
               <div className="w-4 h-4 bg-black rounded-full absolute -top-1 -right-1 flex items-center justify-center text-white text-[10px] font-gilroy_bold">
                 <p className="p-0">
-                  {notifications && Array.isArray(notifications)
-                    ? notifications?.length > 9
+                  {allNotifications && Array.isArray(allNotifications)
+                    ? allNotifications?.length > 9
                       ? "9+"
-                      : notifications?.length
+                      : allNotifications?.length
                     : 0}
                 </p>
               </div>
@@ -113,17 +129,17 @@ const DashboardNavbar = (props) => {
                 // transition
                 className="absolute right-0 z-10 pl-[4px] mt-2 w-[98%] lg:w-[400px] origin-top-right rounded-[10px] bg-white shadow-lg max-h-[400px] overflow-y-scroll scrollClassname py-2"
               >
-                {notifications &&
-                  Array.isArray(notifications) &&
-                  notifications?.length > 0 &&
-                  notifications.map((item) => {
+                {allNotifications &&
+                  Array.isArray(allNotifications) &&
+                  allNotifications?.length > 0 &&
+                  allNotifications.map((item) => {
                     let sender = item?.recipient;
                     return (
                       <>
                         <div
                           key={item.id}
                           onClick={() => {
-                            navigateHandler(item);
+                            deleteItem(item.id);
                           }}
                         >
                           <div className="px-3 text-[12px] text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:forced-color-adjust-none data-[focus]:forced-colors:bg-[Highlight] data-[focus]:forced-colors:text-[HighlightText] flex items-start justify-between hover:bg-gray-100 transition-all rounded-md py-1 cursor-default">
@@ -141,7 +157,10 @@ const DashboardNavbar = (props) => {
                                   <span
                                     className="flex items-center p-0 text-red-700 cursor-pointer"
                                     title="Удалить"
-                                    onClick={() => deleteItem(item)}
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      deleteItem(item?.id);
+                                    }}
                                   >
                                     [<BiTrash />]
                                   </span>
@@ -152,7 +171,7 @@ const DashboardNavbar = (props) => {
                               </div>
                             </div>
                             <span className="text-[12px] text-[#A7A5A5] font-gilroy_medium">
-                              {new Date(d.timestamp).toLocaleString()}
+                              {new Date(item.created_at).toLocaleString()}
                             </span>
                           </div>
                         </div>

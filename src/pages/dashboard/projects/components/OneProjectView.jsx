@@ -1,10 +1,9 @@
 import React, { memo, useCallback, useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import OneProjectData from "./OneProjectData";
 import ReplyForm from "./ReplyForm";
 import Modal from "../../../../components/modal/Modal";
-import { useAuth } from "../../../../services/useAuth";
 import { axiosInstances } from "../../../../config/config";
 import {
   getToast,
@@ -13,24 +12,28 @@ import {
 } from "../../../../utils/options";
 import TeamListItem from "./TeamList";
 import ProjectResponse from "./ProjectResponse";
-// import { errorHandler, getToast, getToastWarn } from '../../../../utils/options';
-// import { axiosInstances } from '../../../../config/config';
-// import { IoStarOutline } from 'react-icons/io5';
-// import { axiosInstances } from '../../../../config/config';
-// import { errorHandler, getToast, getToastWarn } from '../../../../utils/options';
 
 function OneProjectView(props) {
-  const navigate = useNavigate();
   const { t } = useTranslation();
-  const { state } = useLocation();
-  let { user_id } = useAuth();
+  const [datas, setDatas] = useState();
   const [openReplyModal, setOpenReplyModal] = useState({
     open: false,
     data: {},
   });
 
+  const { id } = useParams();
+
   // console.log(state);
   // console.log(user_id);
+
+  const getProjects = async () => {
+    try {
+      const res = await axiosInstances.get(`/project/${id}`);
+      setDatas(res.data);
+    } catch (error) {
+      console.log("error");
+    }
+  };
 
   // open add unit modal
   const openReplyModalHandler = useCallback((value, fullState) => {
@@ -43,33 +46,16 @@ function OneProjectView(props) {
   }, []);
   // const navigate = useNavigate();
 
-  // add favorite
-  // const addFavorite = async d => {
-  //     try {
-  //         const res = await axiosInstances.post("/favourite/", {
-  //             project: d.id,
-  //         });
-  //         // console.log(res);
-  //         if (res.status === 200 || res.status === 201) {
-  //             getToast("Успешно добавлено в избранное.");
-  //             navigate("/admin/projects");
-  //         } else getToastWarn(res.data?.message || "Попробуйте еще раз.");
-  //     } catch (error) {
-  //         // console.log(error);
-  //         errorHandler(error);
-  //     }
-  // }
-
   // reply handler
   const replyHandler = async (value) => {
-    // let obj = {
-    //     receiver: state?.owner,
-    //     senderId: user_id,
-    //     text: value.description,
-    //     project: state
-    // }
-    // navigate("/admin/messages", { state: obj });
-
+    let obj = {
+      receiver: datas?.owner,
+      senderId: user_id,
+      text: value.description,
+      project: state,
+    };
+    localStorage.setItem("state", JSON.stringify(obj));
+    // navigate("/admin/messages", { state: obj })
     try {
       const res = await axiosInstances.post("/reply/project/", value);
 
@@ -86,7 +72,19 @@ function OneProjectView(props) {
       );
     }
   };
-  // console.log(state)
+
+  const deleteEmployee = async (id) => {
+    try {
+      await axiosInstances.delete(`/delete/employee/project/${id}`);
+      getProjects();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    getProjects();
+  }, []);
+
   return (
     <>
       <div className="max-w-5xl mx-auto my-10">
@@ -101,17 +99,17 @@ function OneProjectView(props) {
             <div className="bg-white p-2 lg:p-4 py-6 w-full shadow rounded-lg mb-4 min-h-[100px] flex items-center">
               <div className="flex items-center justify-center h-[80px] w-[80px] rounded-full text-white mr-4 border">
                 <img
-                  src={state ? state.project_image : ""}
+                  src={datas ? datas.project_image : ""}
                   alt="no image"
                   className="w-hull h-full rounded-full"
                 />
               </div>
               <div className="flex-1">
                 <h3 className="lg:text-lg text-md font-bold text-custom-gray">
-                  {state ? state.name : ""}
+                  {datas ? datas.name : ""}
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  {state ? state.description : ""}
+                  {datas ? datas.description : ""}
                 </p>
               </div>
             </div>
@@ -121,13 +119,16 @@ function OneProjectView(props) {
                     <IoStarOutline className='text-3xl text-gray-500' />
                 </div> */}
         </div>
-        {state?.group_emp_list.length > 0 ? (
+        {datas && datas?.group_emp_list?.length > 0 ? (
           <div className="my-14 flex flex-col gap-2">
             <h2 className="text-xl lg:text-2xl text-custom-gray font-gunterz lg:text-left">
               Список команды
             </h2>
             <div className="flex flex-col gap-4 mt-4">
-              <TeamListItem team={state?.group_emp_list} />
+              <TeamListItem
+                team={datas?.group_emp_list}
+                deleteEmployee={deleteEmployee}
+              />
             </div>
           </div>
         ) : (
@@ -138,17 +139,17 @@ function OneProjectView(props) {
             {t("dashboard.pages.one_project_view.open_position")}
           </h2>
           <OneProjectData
-            state={state}
+            state={datas}
             openReplyModalHandler={openReplyModalHandler}
           />
         </div>
-        {state?.reply_to_project.length > 0 ? (
+        {datas?.reply_to_project.length > 0 ? (
           <div className="my-14 flex flex-col gap-2">
             <h2 className="text-xl lg:text-2xl text-custom-gray font-gunterz lg:text-left">
               отклик на проект
             </h2>
             <div className="flex flex-col gap-4 mt-4">
-              <ProjectResponse project={state?.reply_to_project} />
+              <ProjectResponse replyUser={datas?.reply_to_project} />
             </div>
           </div>
         ) : (

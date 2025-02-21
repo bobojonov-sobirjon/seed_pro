@@ -157,7 +157,7 @@ const AllProjects = (props) => {
                 </div>
               </div>
 
-              {props.allProjects && props.allProjects.results?.length === 0 ? (
+              {props.allProjects && props.allProjects?.results?.length === 0 ? (
                 <div className="flex justify-center mt-4">
                   <span className="text-gray-500">
                     {t("dashboard.pages.search_project.alert_not_found")}

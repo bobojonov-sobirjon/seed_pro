@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   Button,
@@ -17,26 +17,21 @@ function SendModal({ data, isOpen, onClose = true }) {
   let { user_id } = useAuth();
   const text_ref = useRef();
   const [projectId, setProjectId] = useState(null);
-
   const [projects, setData] = useState([]);
+  const params = useParams();
   // reply handler
   const replyHandler = async () => {
     if (text_ref.current.value.trim()?.length > 0) {
-      let obj = {
-        receiver: data,
-        senderId: user_id,
-        text: text_ref.current.value,
-        project: null,
-      };
-      navigate("/admin/messages", { state: obj });
-      await axiosInstances.post(`/add-group-of-project/`, {
-        project: projectId,
+      navigate("/admin/messages");
+      const res = await axiosInstances.post(`/add-group-of-project/`, {
+        project: params.id,
         employee: data.id,
       });
+      console.log("res", res);
     }
   };
 
-  const getData = async () => {
+  const getEmployer = async () => {
     try {
       const { data } = await axiosInstances.get("/employer/");
       setData(data);
@@ -47,7 +42,7 @@ function SendModal({ data, isOpen, onClose = true }) {
   };
 
   useEffect(() => {
-    getData();
+    getEmployer();
   }, []);
 
   return (

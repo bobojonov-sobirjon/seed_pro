@@ -18,7 +18,6 @@ import { styles } from "../../../helpers";
 import { Circle } from "lucide-react";
 import {
   deleteOneNotification,
-  getAllNotifications,
 } from "../../../redux/reducers/notificationsReducer";
 
 const Messages = (props) => {
@@ -254,6 +253,7 @@ const Messages = (props) => {
       state: { ...item, isChange: false },
     });
   };
+  console.log(selectedUser)
   return (
     <div className="h-screen w-full lg:max-w-5xl mx-auto my-4 lg:my-10 grid grid-cols-7 gap-4">
       <div
