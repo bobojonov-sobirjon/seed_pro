@@ -82,7 +82,6 @@ const DashboardNavbar = (props) => {
       // setIsOpen(false);
     }
   };
-  console.log("notifications", allNotifications);
 
   return (
     <>

@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 
 const ProjectResponse = (props) => {
   const { replyUser } = props;
-  const [openSendModal, setSendApplyModal] = useState(false);
-  const handleClose = () => setSendApplyModal(false);
+  const [openModalId, setOpenModalId] = useState(null);
+  const handleClose = () => setOpenModalId(null);
+
   return (
     replyUser &&
     replyUser.length > 0 &&
@@ -52,12 +53,12 @@ const ProjectResponse = (props) => {
         </div>
         <button
           className="md:px-10 px-7 py-5 bg-black text-white rounded-[4px]"
-          onClick={() => setSendApplyModal(true)}
+          onClick={() => setOpenModalId(item.id)}
         >
           Подтвердить и перейти в чат
         </button>
         <SendModal
-          isOpen={openSendModal}
+          isOpen={openModalId === item.id}
           onClose={handleClose}
           data={replyUser[0]}
         />
