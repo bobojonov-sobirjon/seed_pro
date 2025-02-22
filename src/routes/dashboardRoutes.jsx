@@ -64,7 +64,7 @@ export const dashboardRouter = createBrowserRouter([
         element: <Specializations />,
       },
       {
-        path: "/admin/specializations/specialization-detail",
+        path: "/admin/specializations/specialization-detail/:id",
         element: <SpecializationsDetails />,
       },
       {
@@ -92,6 +92,6 @@ export const dashboardRouter = createBrowserRouter([
   {
     path: "/",
     // element: <Navigate to="/admin/pages" replace />,
-    element: <Navigate to="/role" replace />,
+    element: <Navigate to="/" replace />,
   },
 ]);

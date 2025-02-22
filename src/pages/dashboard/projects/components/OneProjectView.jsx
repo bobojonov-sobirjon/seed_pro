@@ -12,9 +12,11 @@ import {
 } from "../../../../utils/options";
 import TeamListItem from "./TeamList";
 import ProjectResponse from "./ProjectResponse";
+import { useAuth } from "../../../../services/useAuth";
 
 function OneProjectView(props) {
   const { t } = useTranslation();
+  const { user_id } = useAuth();
   const [datas, setDatas] = useState();
   const [openReplyModal, setOpenReplyModal] = useState({
     open: false,
@@ -52,7 +54,7 @@ function OneProjectView(props) {
       receiver: datas?.owner,
       senderId: user_id,
       text: value.description,
-      project: state,
+      project: datas,
     };
     localStorage.setItem("state", JSON.stringify(obj));
     // navigate("/admin/messages", { state: obj })

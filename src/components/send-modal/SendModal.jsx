@@ -22,12 +22,18 @@ function SendModal({ data, isOpen, onClose = true }) {
   // reply handler
   const replyHandler = async () => {
     if (text_ref.current.value.trim()?.length > 0) {
+      let obj = {
+        receiver: data,
+        senderId: user_id,
+        text: text_ref.current.value,
+        project: null,
+      };
+      localStorage.setItem("user_data", JSON.stringify(obj));
       navigate("/admin/messages");
-      const res = await axiosInstances.post(`/add-group-of-project/`, {
-        project: params.id,
+      await axiosInstances.post(`/add-group-of-project/`, {
+        project: projectId,
         employee: data.id,
       });
-      console.log("res", res);
     }
   };
 

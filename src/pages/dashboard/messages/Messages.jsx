@@ -16,13 +16,10 @@ import { useAuth } from "../../../services/useAuth";
 import userImg from "../../../assets/images/user.jpg";
 import { styles } from "../../../helpers";
 import { Circle } from "lucide-react";
-import {
-  deleteOneNotification,
-} from "../../../redux/reducers/notificationsReducer";
+import { deleteOneNotification } from "../../../redux/reducers/notificationsReducer";
 
 const Messages = (props) => {
   const navigate = useNavigate();
-  const { state } = useLocation();
   const { t } = useTranslation();
   const { user_id } = useAuth();
   const cookie = new Cookies();
@@ -35,8 +32,13 @@ const Messages = (props) => {
   const { allNotifications, loading } = useSelector(
     (state) => state.notificationsReducer
   );
-  const dispatch = useDispatch();
+  const [state, setState] = useState(null);
+  useEffect(() => {
+    const storedState = JSON.parse(localStorage.getItem("user_data"));
+    setState(storedState);
+  }, []);
 
+  const dispatch = useDispatch();
   const removeNotificationWithSelectedUser = async () => {
     const controller = new AbortController();
     const signal = controller.signal;
@@ -253,7 +255,6 @@ const Messages = (props) => {
       state: { ...item, isChange: false },
     });
   };
-  console.log(selectedUser)
   return (
     <div className="h-screen w-full lg:max-w-5xl mx-auto my-4 lg:my-10 grid grid-cols-7 gap-4">
       <div

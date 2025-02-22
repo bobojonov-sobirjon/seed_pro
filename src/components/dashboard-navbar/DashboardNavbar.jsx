@@ -82,7 +82,6 @@ const DashboardNavbar = (props) => {
       // setIsOpen(false);
     }
   };
-
   return (
     <>
       <nav className="flex justify-between items-center mx-auto rounded-full p-4 px-10 bg-white shadow-md lg:mt-2 font-gilroy">
@@ -113,10 +112,22 @@ const DashboardNavbar = (props) => {
               </div> */}
               <div className="w-4 h-4 bg-black rounded-full absolute -top-1 -right-1 flex items-center justify-center text-white text-[10px] font-gilroy_bold">
                 <p className="p-0">
-                  {allNotifications && Array.isArray(allNotifications)
-                    ? allNotifications?.length > 9
+                  {Array.isArray(notifications) &&
+                  Array.isArray(allNotifications) &&
+                  notifications.length > 0 &&
+                  allNotifications.length > 0
+                    ? notifications.length + allNotifications.length > 9
                       ? "9+"
-                      : allNotifications?.length
+                      : notifications.length + allNotifications.length
+                    : Array.isArray(notifications) && notifications.length > 0
+                    ? notifications.length > 9
+                      ? "9+"
+                      : notifications.length
+                    : Array.isArray(allNotifications) &&
+                      allNotifications.length > 0
+                    ? allNotifications.length > 9
+                      ? "9+"
+                      : allNotifications.length
                     : 0}
                 </p>
               </div>
@@ -126,17 +137,19 @@ const DashboardNavbar = (props) => {
               <div
                 ref={menuRef}
                 // transition
-                className="absolute right-0 z-10 pl-[4px] mt-2 w-[98%] lg:w-[400px] origin-top-right rounded-[10px] bg-white shadow-lg max-h-[400px] overflow-y-scroll scrollClassname py-2"
+                className="absolute right-0 z-10 pl-[4px] mt-2 min-h-[50px] w-[98%] lg:w-[450px] origin-top-right rounded-[10px] bg-white shadow-lg max-h-[400px] overflow-y-scroll scrollClassname py-2"
               >
-                {allNotifications &&
-                  Array.isArray(allNotifications) &&
-                  allNotifications?.length > 0 &&
-                  allNotifications.map((item) => {
+                {(Array.isArray(notifications) && notifications.length > 0
+                  ? notifications
+                  : []
+                )
+                  .reverse()
+                  .map((it) => {
+                    let item = it.content;
                     let sender = item?.recipient;
                     return (
-                      <>
+                      <div key={item.id}>
                         <div
-                          key={item.id}
                           onClick={() => {
                             deleteItem(item.id);
                           }}
@@ -164,20 +177,123 @@ const DashboardNavbar = (props) => {
                                     [<BiTrash />]
                                   </span>
                                 </span>
-                                <span className="text-[#A7A5A5] text-[12px] lg:text-[13px] font-gilroy_medium line-clamp-1 break-words">
-                                  {item?.message}
+                                <span className="text-[#A7A5A5] text-[12px] lg:text-[13px] font-gilroy_medium ">
+                                  {item?.message.includes(
+                                    "Вы присоединились к этой команде:"
+                                  )
+                                    ? item.message
+                                        .split(
+                                          "Вы присоединились к этой команде:"
+                                        )
+                                        .map((part, index) =>
+                                          index === 0 ? (
+                                            <span key={index}>
+                                              {part}
+                                              {/* Insert a line break after the phrase */}
+                                              Вы присоединились к этой команде:
+                                              <br />
+                                            </span>
+                                          ) : (
+                                            <span key={index}>{part}</span>
+                                          )
+                                        )
+                                    : item?.message}
                                 </span>
                               </div>
                             </div>
-                            <span className="text-[12px] text-[#A7A5A5] font-gilroy_medium">
-                              {new Date(item.created_at).toLocaleString()}
-                            </span>
+                            <div className="flex flex-col items-end text-[12px] text-[#A7A5A5] font-gilroy_medium">
+                              <span>
+                                {new Date(item.created_at).toLocaleDateString()}
+                              </span>
+                              <span>
+                                {new Date(item.created_at).toLocaleTimeString(
+                                  "en-US",
+                                  { hour: "2-digit", minute: "2-digit" }
+                                )}
+                              </span>
+                            </div>
                           </div>
                         </div>
                         <hr className="w-[94%] m-auto my-2" />
-                      </>
+                      </div>
                     );
                   })}
+                {(Array.isArray(allNotifications) && allNotifications.length > 0
+                  ? allNotifications
+                  : []
+                ).map((item) => {
+                  let sender = item?.recipient;
+                  return (
+                    <div key={item.id}>
+                      <div
+                        onClick={() => {
+                          deleteItem(item.id);
+                        }}
+                      >
+                        <div className="px-3 text-[12px] text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:forced-color-adjust-none data-[focus]:forced-colors:bg-[Highlight] data-[focus]:forced-colors:text-[HighlightText] flex items-start justify-between hover:bg-gray-100 transition-all rounded-md py-1 cursor-default">
+                          <div className="flex items-start gap-4">
+                            <img
+                              src={sender?.avatar ? sender?.avatar : noImage}
+                              className="w-[48px] h-[48px] rounded-full object-cover"
+                              alt="no image"
+                            />
+                            <div className="flex flex-col">
+                              <span className="font-gilroy_medium text-[15px] text-custom-gray lg:text-[16px] flex items-center gap-1">
+                                <span>
+                                  {sender?.first_name} {sender?.last_name}
+                                </span>
+                                <span
+                                  className="flex items-center p-0 text-red-700 cursor-pointer"
+                                  title="Удалить"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    deleteItem(item?.id);
+                                  }}
+                                >
+                                  [<BiTrash />]
+                                </span>
+                              </span>
+                              <span className="text-[#A7A5A5] text-[12px] lg:text-[13px] font-gilroy_medium ">
+                                {item?.message.includes(
+                                  "Вы присоединились к этой команде:"
+                                )
+                                  ? item.message
+                                      .split(
+                                        "Вы присоединились к этой команде:"
+                                      )
+                                      .map((part, index) =>
+                                        index === 0 ? (
+                                          <span key={index}>
+                                            {part}
+                                            {/* Insert a line break after the phrase */}
+                                            Вы присоединились к этой команде:
+                                            <br />
+                                          </span>
+                                        ) : (
+                                          <span key={index}>{part}</span>
+                                        )
+                                      )
+                                  : item?.message}
+                              </span>
+                            </div>
+                          </div>
+                          <div className="flex flex-col items-end text-[12px] text-[#A7A5A5] font-gilroy_medium">
+                            <span>
+                              {new Date(item.created_at).toLocaleDateString()}
+                            </span>
+                            <span>
+                              {new Date(item.created_at).toLocaleTimeString(
+                                "en-US",
+                                { hour: "2-digit", minute: "2-digit" }
+                              )}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <hr className="w-[94%] m-auto my-2" />
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>
