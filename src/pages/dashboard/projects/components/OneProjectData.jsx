@@ -78,7 +78,7 @@ function OneProjectData(props) {
                   className="bg-custom-gray font-gilroy-bold lg:w-auto w-full hover:bg-gray-600 transition-all text-white py-4 px-8 text-sm rounded focus:outline-none focus:shadow-outline mt-4 disabled:cursor-not-allowed disabled:bg-gray-600"
                   onClick={() => props.openReplyModalHandler(item, state)}
                   title="svoy proyekt"
-                  disabled={state?.is_active}
+                  disabled={state?.is_replyed}
                 >
                   {t("dashboard.pages.one_project_view.reply")}
                 </button>
