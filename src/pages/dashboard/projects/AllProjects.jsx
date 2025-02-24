@@ -225,16 +225,19 @@ const AllProjects = (props) => {
                   >
                     {t("dashboard.pages.search_project.search_button_text")}
                   </button>
-                  {props.profileData?.active && (
-                    <Link
-                      to="/admin/create-project"
-                      className="col-span-1 lg:col-span-2 w-full"
-                    >
-                      <button className="p-3 px-6 bg-main-green text-white rounded-md w-full">
-                        {t("dashboard.pages.search_project.create_button_text")}
-                      </button>
-                    </Link>
-                  )}
+                  {props.profileData?.active &&
+                    props.profileData?.groups[0] === 1 && (
+                      <Link
+                        to="/admin/create-project"
+                        className="col-span-1 lg:col-span-2 w-full"
+                      >
+                        <button className="p-3 px-6 bg-main-green text-white rounded-md w-full">
+                          {t(
+                            "dashboard.pages.search_project.create_button_text"
+                          )}
+                        </button>
+                      </Link>
+                    )}
                 </div>
               </div>
 
