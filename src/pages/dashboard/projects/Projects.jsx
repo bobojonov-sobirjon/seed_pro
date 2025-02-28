@@ -111,7 +111,7 @@ const Projects = (props) => {
                 )}
               </div>
             )}
-            {props.profileData?.active && (
+            {props.profileData?.active && props.profileData?.groups[0]===1&& (
               <div className='flex justify-start items-start '>
                 <Link to={'/admin/create-project'}>
                   <button

@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { useTranslation } from "react-i18next";
@@ -22,6 +22,7 @@ function AllProjectsData(props) {
     try {
       const res = await axiosInstances.post("/favourite/", {
         project: d.id,
+        owner: d.owner.id,
       });
       if (res.status == 200 || res.status == 201 || res.status == 204) {
         getToast(t("toastMessage.allProjectsDataPage.added_success"));
@@ -42,7 +43,6 @@ function AllProjectsData(props) {
       errorHandler(error);
     }
   };
-
   // delete item in favorite
   const deleteFavorite = async (d) => {
     try {
@@ -135,7 +135,12 @@ function AllProjectsData(props) {
                 </div>
               </div>
 
-              <div className="flex-1 absolute top-[30%] right-4">
+              <div
+                className="flex-1 absolute top-[30%] right-4"
+                onClick={() => {
+                  console.log(item.owner.id);
+                }}
+              >
                 {item.favorite ? (
                   <IoStarSharp
                     className="text-xl md:text-3xl text-main-green cursor-pointer"

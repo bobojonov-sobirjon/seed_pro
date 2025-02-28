@@ -178,16 +178,17 @@ const DashboardSidebar = (props) => {
           </div>
           {isDropdownVisible && (
             <div className="flex flex-col ">
-              {props.profileData?.active && (
-                <Link
-                  onClick={() => setMobileNavVisibility(false)}
-                  to={"/admin/create-project"}
-                  className={`flex items-center py-2 hover:bg-gray-200 px-4`}
-                >
-                  <MdOutlineKeyboardArrowRight className="w-4 h-4 mr-2" />
-                  {t("dashboard.sidebarItems.add_project_link")}
-                </Link>
-              )}
+              {props.profileData?.active &&
+                props.profileData?.groups[0] === 1 && (
+                  <Link
+                    onClick={() => setMobileNavVisibility(false)}
+                    to={"/admin/create-project"}
+                    className={`flex items-center py-2 hover:bg-gray-200 px-4`}
+                  >
+                    <MdOutlineKeyboardArrowRight className="w-4 h-4 mr-2" />
+                    {t("dashboard.sidebarItems.add_project_link")}
+                  </Link>
+                )}
               <Link
                 onClick={() => setMobileNavVisibility(false)}
                 to="all-projects"

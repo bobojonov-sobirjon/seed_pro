@@ -6,22 +6,6 @@ import Login from '../pages/auth/Login';
 import ForgotPassword from '../pages/auth/ForgotPassword';
 import PageNotFound from '../pages/pageNotFound/PageNotFound';
 
-// dashboard
-// import DashboardLayout from '../layout/DashboardLayout';
-// import {
-//   Favorites,
-//   Messages,
-//   Pages,
-//   Profile,
-//   Projects,
-//   Settings,
-// } from '../pages/dashboard';
-// import ProjectsDetails from '../pages/dashboard/projects/ProjectDetails';
-// import AllProjects from '../pages/dashboard/projects/AllProjects';
-// import AllProjectsDetails from '../pages/dashboard/projects/AllProjectsDetails';
-// import CreateProject from '../pages/dashboard/projects/CreateProject';
-// import Specializations from '../pages/specializations/Specializations';
-// import SpecializationsDetails from '../pages/specializations/SpecializationsDetails';
 
 // Определение основного маршрутизатора для публичных страниц
 export const router = createBrowserRouter([
@@ -53,92 +37,5 @@ export const router = createBrowserRouter([
     path: '/forgot-password',
     element: <ForgotPassword />,
   },
-  // dashboard
-  // {
-  //   path: '/admin',
-  //   element: <DashboardLayout />,
-  //   children: [
-  //     {
-  //       path: 'profile',
-  //       element: <Profile />,
-  //     },
-  //     {
-  //       path: 'pages',
-  //       element: <Pages />,
-  //     },
-  //     {
-  //       path: 'projects',
-  //       element: <Projects />,
-  //     },
-  //     {
-  //       path: 'projects/create-project',
-  //       element: <CreateProject />,
-  //     },
-  //     {
-  //       path: 'projects/details/:id',
-  //       element: <ProjectsDetails />,
-  //     },
-  //     {
-  //       path: 'all-projects',
-  //       element: <AllProjects />,
-  //     },
-  //     {
-  //       path: 'all-projects/details/:id',
-  //       element: <AllProjectsDetails />,
-  //     },
-  //     {
-  //       path: 'specializations',
-  //       element: <Specializations />,
-  //     },
-  //     {
-  //       path: 'specializations/specializations-details',
-  //       element: <SpecializationsDetails />,
-  //     },
-  //     {
-  //       path: 'messages',
-  //       element: <Messages />,
-  //     },
-  //     {
-  //       path: 'favorites',
-  //       element: <Favorites />,
-  //     },
-  //     {
-  //       path: 'settings',
-  //       element: <Settings />,
-  //     },
-  //   ],
-  // },
 ]);
 
-// export const = createBrowserRouter([
-//   {
-//     path: '/admin',
-//     element: <DashboardLayout />,
-//     children: [
-//       {
-//         path: '/admin/profile',
-//         element: <Profile />,
-//       },
-//       {
-//         path: '/admin/projects',
-//         element: <Projects />,
-//       },
-//       {
-//         path: '/admin/projects/details/:id',
-//         element: <ProjectsDetails />,
-//       },
-//       {
-//         path: '/admin/messages',
-//         element: <Messages />,
-//       },
-//       {
-//         path: '/admin/favorites',
-//         element: <Favorites />,
-//       },
-//       {
-//         path: '/admin/settings',
-//         element: <Settings />,
-//       },
-//     ],
-//   },
-// ]);

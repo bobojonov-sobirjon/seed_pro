@@ -17,11 +17,50 @@ import SpecializationsDetails from "../pages/specializations/SpecializationsDeta
 import OneProjectView from "../pages/dashboard/projects/components/OneProjectView";
 import Role from "../pages/dashboard/role/Role";
 import PageNotFound from "../pages/pageNotFound/PageNotFound";
+import Home from "../pages/home/Home";
+import Register from "../pages/auth/Register";
+import Login from "../pages/auth/Login";
+import ForgotPassword from "../pages/auth/ForgotPassword";
+import Layout from "../layout/Layout";
+import AuthLayout from "../layout/AuthLayout";
 
-export const dashboardRouter = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/role",
     element: <Role />,
+  },
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "*",
+        element: <PageNotFound />,
+      },
+    ],
+  },
+  // auth
+  {
+    path: "/",
+    element: <AuthLayout />, // Auth sahifalarini tekshirish uchun
+    children: [
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/forgot-password",
+        element: <ForgotPassword />,
+      },
+    ],
   },
   {
     path: "/admin",
@@ -92,6 +131,6 @@ export const dashboardRouter = createBrowserRouter([
   {
     path: "/",
     // element: <Navigate to="/admin/pages" replace />,
-    element: <Navigate to="/" replace />,
+    element: <Navigate to="/admin/pages" replace />,
   },
 ]);
