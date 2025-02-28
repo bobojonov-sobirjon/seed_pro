@@ -135,12 +135,7 @@ function AllProjectsData(props) {
                 </div>
               </div>
 
-              <div
-                className="flex-1 absolute top-[30%] right-4"
-                onClick={() => {
-                  console.log(item.owner.id);
-                }}
-              >
+              <div className="flex-1 absolute top-[30%] right-4">
                 {item.favorite ? (
                   <IoStarSharp
                     className="text-xl md:text-3xl text-main-green cursor-pointer"
