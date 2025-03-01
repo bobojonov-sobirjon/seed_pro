@@ -294,6 +294,13 @@ const DashboardNavbar = (props) => {
                     </div>
                   );
                 })}
+
+                {notifications?.length === 0 &&
+                  allNotifications?.length === 0 && (
+                    <div className="text-center text-gray-500 py-4">
+                      Новых уведомлений нет.
+                    </div>
+                  )}
               </div>
             )}
           </div>

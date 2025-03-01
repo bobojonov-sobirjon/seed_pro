@@ -30,7 +30,7 @@ function Details({ data, deleteItem }) {
           return (
             <div
               key={item.id}
-              className="flex items-center justify-between relative mb-2 lg:mb-6"
+              className="flex items-center justify-between relative mb-2 lg:mb-6 cursor-pointer"
             >
               <div className="flex flex-1 items-center">
                 <div
