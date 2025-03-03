@@ -82,6 +82,8 @@ const DashboardNavbar = (props) => {
       // setIsOpen(false);
     }
   };
+  console.log("ALLnotifications",allNotifications)
+  console.log(notifications)
   return (
     <>
       <nav className="flex justify-between items-center mx-auto rounded-full p-4 px-10 bg-white shadow-md lg:mt-2 font-gilroy">
