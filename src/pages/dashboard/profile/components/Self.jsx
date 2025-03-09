@@ -123,7 +123,7 @@ function Self(props) {
             {profileData?.first_name} {profileData?.last_name}
           </div>
           <div className="text-gray-600">
-            {profileData?.counrty}, г. {profileData?.city}
+            {profileData?.counrty}, {profileData?.city}
           </div>
         </div>
       </div>

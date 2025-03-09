@@ -392,7 +392,7 @@ const CreateProject = (props) => {
                   onChange={(e) => handleChange(e)}
                   className="w-4 h-4"
                 />
-                Показывать проект в разделк проектов
+                Показывать проект в разделе проектов
               </label>
             </div>
           </div>

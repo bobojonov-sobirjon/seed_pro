@@ -95,7 +95,7 @@ export const router = createBrowserRouter([
         element: <OneProjectView />,
       },
       {
-        path: "/admin/projects/details/",
+        path: "/admin/projects/details/:id",
         element: <ProjectDetails />,
       },
       {

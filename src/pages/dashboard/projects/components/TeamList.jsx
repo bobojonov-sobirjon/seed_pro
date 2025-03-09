@@ -4,15 +4,15 @@ import { BiTrash } from "react-icons/bi";
 import { axiosInstances } from "../../../../config/config";
 
 const TeamListItem = (props) => {
-  const { team,deleteEmployee } = props;
-  
-
+  const { team, deleteEmployee } = props;
   return (
     team &&
     team.length > 0 &&
     team.map((item) => (
-      <div key={item?.id} className="flex w-full justify-between p-2 lg:p-6 bg-white shadow-lg rounded-lg">
-
+      <div
+        key={item?.id}
+        className="flex w-full justify-between p-2 lg:p-6 bg-white shadow-lg rounded-lg"
+      >
         <div className="flex items-center sm:flex-row flex-col gap-9   ">
           <div className="w-[96px] h-[96px] flex items-center justify-center p-7 bg-black rounded-full">
             <img src={item?.employee?.avatar || noImage} alt="" />
@@ -38,7 +38,10 @@ const TeamListItem = (props) => {
             </div>
           </div>
         </div>
-        <span className="cursor-pointer text-red-700 mt-2 transition-colors duration-200 ease-linear" onClick={() => deleteEmployee(item.id)}>
+        <span
+          className="cursor-pointer text-red-700 mt-2 transition-colors duration-200 ease-linear"
+          onClick={() => deleteEmployee(item.id)}
+        >
           <BiTrash size={28} />
         </span>
       </div>

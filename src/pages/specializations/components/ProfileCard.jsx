@@ -21,7 +21,7 @@ const ProfileCard = (props) => {
               </div>
               {user.role === "Соискатель" ? (
                 <div className="text-[#939393] text-[13px] lg:text-[14px]">
-                  {user?.active ? (
+                  {user?.is_replyed ? (
                     <span className="flex items-center gap-2">
                       {t(
                         "dashboard.header.specialists.details.profileCard.not_look_for_project"

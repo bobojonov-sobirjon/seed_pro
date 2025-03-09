@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { IoStarSharp, IoStarOutline } from "react-icons/io5";
@@ -55,6 +55,9 @@ const ProjectDetails = ({ data }) => {
       errorHandler(error);
     }
   };
+  useEffect(() => {
+    setInData(data);
+  }, [data]);
 
   return (
     <div className="flex items-center justify-between relative">
@@ -65,24 +68,24 @@ const ProjectDetails = ({ data }) => {
         >
           <div className="flex items-center justify-center h-[80px] w-[80px] rounded-full text-white mr-4 border">
             <img
-              src={inData.project_image}
+              src={inData?.project_image}
               alt="no image"
               className="w-hull h-full rounded-full"
             />
           </div>
           <div className="flex-1">
             <h3 className="font-gilroy_bold lg:text-[20px] text-[16px] text-custom-gray">
-              {inData.name}
+              {inData?.name}
             </h3>
             <p className="text-[#A7A5A5] font-gilroy_medium text-[13px] lg:text-[14px] line-clamp-2">
-              {inData.description}
+              {inData?.description}
             </p>
           </div>
         </Link>
       </div>
 
       <div className="absolute top-[20%] lg:top-[30%] right-4">
-        {inData.favorite ? (
+        {inData?.favorite ? (
           <IoStarSharp
             className="text-3xl text-main-green"
             onClick={() => deleteFavorite(inData)}

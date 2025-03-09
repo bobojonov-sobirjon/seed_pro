@@ -1,11 +1,17 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 // components
 import DashboardSidebar from '../components/dashboard-sidebar/DashboardSidebar';
 import Footer from '../components/footer/Footer';
 import { DashboardNavbar } from '../components';
+import { useEffect } from 'react';
 
 const DashboardLayout = () => {
+  const location = useLocation(); // current page location
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, [location.pathname]); 
   return (
     <div className='flex flex-col w-full'>
       <div className='flex flex-col lg:flex-row min-h-screen'>

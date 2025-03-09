@@ -15,8 +15,6 @@ const SpecializationsDetails = () => {
   const handleClose = () => setSendApplyModal(false);
   const handleSend = () => setSendApplyModal(true);
 
-  // navigate chat
-  const navigateChatHandler = () => {};
   return (
     <div className="max-w-5xl mx-auto py-5">
       <ProfileCard user={state} />
