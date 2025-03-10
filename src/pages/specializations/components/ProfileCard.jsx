@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 const ProfileCard = (props) => {
   const { t } = useTranslation();
   const { user } = props;
+  console.log(user);
   return (
     <div className="mx-auto p-4 lg:p-8 bg-white rounded-lg shadow-md overflow-hidden flex flex-col gap-4">
       <div className="flex justify-between">
@@ -21,7 +22,7 @@ const ProfileCard = (props) => {
               </div>
               {user.role === "Соискатель" ? (
                 <div className="text-[#939393] text-[13px] lg:text-[14px]">
-                  {user?.is_replyed ? (
+                  {!user?.is_replayed_project ? (
                     <span className="flex items-center gap-2">
                       {t(
                         "dashboard.header.specialists.details.profileCard.not_look_for_project"

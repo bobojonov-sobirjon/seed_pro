@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   Button,
@@ -18,7 +18,6 @@ function SendModal({ data, isOpen, onClose = true }) {
   const text_ref = useRef();
   const [projectId, setProjectId] = useState(null);
   const [projects, setData] = useState([]);
-  const params = useParams();
   // reply handler
   const replyHandler = async () => {
     if (text_ref.current.value.trim()?.length > 0) {
