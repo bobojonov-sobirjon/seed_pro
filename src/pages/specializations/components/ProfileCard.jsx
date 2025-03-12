@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import noImage from "../../../assets/images/noImage.png";
 
 const ProfileCard = (props) => {
   const { t } = useTranslation();
@@ -9,11 +10,19 @@ const ProfileCard = (props) => {
       <div className="flex justify-between">
         <div className="flex items-center gap-4 lg:gap-6">
           <div>
-            <img
-              className="block h-[85px] w-[85px] rounded-full object-cover"
-              src="https://via.placeholder.com/150"
-              alt="Profile"
-            />
+            {user?.avatar ? (
+              <img
+                className="block h-[85px] w-[85px] rounded-full object-cover"
+                src={user.avatar}
+                alt="Profile"
+              />
+            ) : (
+              <img
+                className="block h-[85px] w-[85px] rounded-full object-cover"
+                src={noImage}
+                alt="Profile"
+              />
+            )}
           </div>
           <div>
             <div>
@@ -22,7 +31,7 @@ const ProfileCard = (props) => {
               </div>
               {user.role === "Соискатель" ? (
                 <div className="text-[#939393] text-[13px] lg:text-[14px]">
-                  {!user?.is_replayed_project ? (
+                  {user?.is_replayed_project ? (
                     <span className="flex items-center gap-2">
                       {t(
                         "dashboard.header.specialists.details.profileCard.not_look_for_project"
