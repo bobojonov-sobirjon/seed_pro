@@ -12,7 +12,7 @@ import ProfessionalInfoForm from "./ProfessionalInfoForm";
 import { getProfessioanalInformation } from "../../../../redux/reducers/profileReducer";
 import { errorHandler, getToast } from "../../../../utils/options";
 import { axiosInstances } from "../../../../config/config";
-
+import AccordionIcon from "../../../../components/AccordionIcon";
 
 function ProfessionalInfo(props) {
   const { professionalInfo } = props;
