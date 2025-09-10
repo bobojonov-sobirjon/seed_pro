@@ -1,1 +1,1 @@
-export const BASE_URL = 'http://192.168.0.217:9000';
+export const BASE_URL = 'http://api.startap-seed.ru/';
