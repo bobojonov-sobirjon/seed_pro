@@ -47,7 +47,7 @@ const Profile = (props) => {
       <div className="max-w-5xl mx-auto w-full my-10 p-0 lg:p-8 bg-white shadow-lg rounded-lg">
         {/* just self */}
         <Self
-          profileData={user_id ? user : props.profileData}
+          profileData={user_id ? (user || {}) : (props.profileData || {})}
           getData={getData}
         />
       </div>

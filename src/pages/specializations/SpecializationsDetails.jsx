@@ -31,7 +31,7 @@ const SpecializationsDetails = () => {
         </div>
 
         <div className="flex justify-end gap-2 w-full lg:w-auto font-gilroy_semibold text-[13px]">
-          {state && state.hasOwnProperty("isChange") && state.isChange ? (
+          {state && typeof state === 'object' && state.hasOwnProperty("isChange") && state.isChange ? (
             <button
               type="button"
               onClick={handleSend}

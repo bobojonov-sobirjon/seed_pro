@@ -38,7 +38,7 @@ function ReplyOwner(props) {
 
     // navigate chat handler
     const navigateChatHandler = async item => {
-        if (props.profileData && props.profileData.hasOwnProperty("id")) {
+        if (props.profileData && typeof props.profileData === 'object' && props.profileData.hasOwnProperty("id")) {
             setLoading(true);
             let obj = {
                 receiver: item.owner,
@@ -65,7 +65,7 @@ function ReplyOwner(props) {
                     });
                     // console.log(t);
 
-                    if (t && t.hasOwnProperty("id")) {
+                    if (t && typeof t === 'object' && t.hasOwnProperty("id")) {
                         const res = await axiosInstances.get(`/chat/conversation/${t?.id}/`);
 
                         if (res.status === 200 || res.status === 201 || res.status == 204) {
