@@ -283,7 +283,6 @@ const profileReducer = createSlice({
                 state.loading = false;
             })
             .addCase(getProfile.rejected, (state, action) => {
-                state.profileData = {};
                 state.loading = false;
             })
 

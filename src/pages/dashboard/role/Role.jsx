@@ -28,7 +28,7 @@ function Role(props) {
 
   // swicth checked
   const switchCheckedHandler = async () => {
-    if (props.profileData && typeof props.profileData === 'object' && props.profileData.hasOwnProperty("id")) {
+    if (props.profileData && props.profileData.hasOwnProperty("id")) {
       try {
         const { information, role, avatar, ...others } = props.profileData;
         let obj = {

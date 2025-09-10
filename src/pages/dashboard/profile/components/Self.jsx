@@ -16,16 +16,16 @@ function Self(props) {
     setValue,
   } = useForm();
   const [sex, setSex] = useState(
-    profileData && typeof profileData === 'object' && profileData.hasOwnProperty("sex") ? profileData?.sex : ""
+    profileData.hasOwnProperty("sex") ? profileData?.sex : ""
   );
   const [file, setFile] = useState(
-    profileData && typeof profileData === 'object' && profileData.hasOwnProperty("avatar") ? profileData?.avatar : null
+    profileData.hasOwnProperty("avatar") ? profileData?.avatar : null
   );
   const [loading, setLoading] = useState(false);
   const date_birthday_ref = useRef();
 
   useEffect(() => {
-    if (profileData && typeof profileData === 'object' && profileData.hasOwnProperty("id")) {
+    if (profileData.hasOwnProperty("id")) {
       setFile(profileData?.avatar);
       setSex(profileData?.sex);
       setValue("firstname", profileData?.first_name);

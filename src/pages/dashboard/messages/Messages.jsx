@@ -259,7 +259,7 @@ const Messages = (props) => {
     <div className="h-screen w-full lg:max-w-5xl mx-auto my-4 lg:my-10 grid grid-cols-7 gap-4">
       <div
         className={`relative max-h-[calc(100vh-160px)] col-span-7 lg:col-span-3 rounded-lg ${
-          selectedUser && typeof selectedUser === 'object' && selectedUser.hasOwnProperty("id")
+          selectedUser.hasOwnProperty("id")
             ? "hidden lg:block"
             : "block lg:block"
         }`}
@@ -315,10 +315,10 @@ const Messages = (props) => {
           </div>
         </div>
       </div>
-      {selectedUser && typeof selectedUser === 'object' && selectedUser.hasOwnProperty("id") && (
+      {selectedUser.hasOwnProperty("id") && (
         <div
           className={`max-h-[calc(100vh-160px)] overflow-y-auto col-span-7 lg:col-span-4 bg-white rounded-lg shadow ${
-            selectedUser && typeof selectedUser === 'object' && selectedUser.hasOwnProperty("id") ? "flex" : "hidden"
+            selectedUser.hasOwnProperty("id") ? "flex" : "hidden"
           } lg:flex flex-col relative h-[calc(100vh-160px)] lg:h-[calc(100vh-160px)]`}
         >
           {/* Header */}

@@ -71,7 +71,7 @@ const DashboardNavbar = (props) => {
 
   // navigate
   const navigateHandler = (item) => {
-    if (item && item?.recipient && typeof item.recipient === 'object' && item.recipient.hasOwnProperty("id")) {
+    if (item && item?.recipient?.hasOwnProperty("id")) {
       let obj = {
         receiver: item.recipient?.sender,
         senderId: user_id,

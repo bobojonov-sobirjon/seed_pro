@@ -79,7 +79,7 @@ const Register = () => {
             className={`bg-input_color outline-none border w-full py-4 px-4 rounded mb-4 ${errors.name ? "border-red-700" : "border-input_color"}`}
             type='text'
             placeholder={t("register.firstname_input_placeholder")}
-            defaultValue={state && typeof state === 'object' && state.hasOwnProperty("name") ? state?.name : ""}
+            defaultValue={state && state.hasOwnProperty("name") ? state?.name : ""}
             {...register('name', { required: true, maxLength: 50 })}
           />
           <input
@@ -92,7 +92,7 @@ const Register = () => {
             className={`bg-input_color outline-none border w-full py-4 px-4 rounded mb-4 ${errors.email ? "border-red-700" : "border-input_color"}`}
             type='email'
             placeholder={t("register.email_input_placeholder")}
-            defaultValue={state && typeof state === 'object' && state.hasOwnProperty("email") ? state?.email : ""}
+            defaultValue={state && state.hasOwnProperty("email") ? state?.email : ""}
             {...register('email', { required: true })}
           />
           <div className='flex items-center rounded-md bg-input_color relative'>
